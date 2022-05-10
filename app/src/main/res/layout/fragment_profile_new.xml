@@ -1,0 +1,815 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signup_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.apps.freeroadingdriver.fragments.ProfileFragment"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/signup_fragment_upper">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextviewItalicBold
+                android:id="@+id/title"
+                style="@style/whiteHeadingTextviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aristapro"
+                android:text="@string/driver_profile"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_25ssp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/newlogo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="176dp" />
+
+            <RelativeLayout
+                android:id="@+id/profileHolder"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:background="@color/colorWhite"
+                app:layout_constraintTop_toBottomOf="@+id/logo">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profilePic1"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/useravatar"
+                    app:civ_border_color="@color/rednew"
+                    app:civ_border_width="1dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/profilePic1"
+                    android:layout_toEndOf="@+id/profilePic1"
+                    android:src="@drawable/ic_edit" />
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nameWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_32sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profileHolder"
+                app:theme="@style/TextLabel">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                    android:id="@+id/name_edittext"
+                    style="@style/editTextRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_person"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:hint="@string/hint_name"
+                    android:imeOptions="actionNext"
+                    android:padding="@dimen/_10sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_mobile_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_32sdp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nameWrapper">
+
+                <LinearLayout
+                    android:id="@+id/ll_country_code1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="true"
+                    android:orientation="vertical">
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                        style="@style/regularblackTextviewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/aristalight"
+                        android:text="CC" />
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                        android:id="@+id/tv_cc"
+                        style="@style/regularblackTextviewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_2sdp"
+                        android:text="+1" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorBlack" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:background="@color/colorBlack" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/usernameWrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="true"
+                    app:theme="@style/TextLabel">
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                        android:id="@+id/edt_mobile_number"
+                        style="@style/editTextRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_phone"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:hint="@string/mobile_number"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:nextFocusForward="@+id/email_edittext"
+                        android:padding="@dimen/_10sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_32sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ll_mobile_no"
+                app:theme="@style/TextLabel">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                    android:id="@+id/email_edittext"
+                    style="@style/editTextRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:hint="@string/str_Email"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/_10sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_32sdp"
+                android:baselineAligned="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/emailWrapper"
+                app:theme="@style/TextLabel">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                    android:id="@+id/edt_address"
+                    style="@style/editTextRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_location"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:hint="@string/address"
+                    android:imeOptions="actionNext"
+                    android:padding="@dimen/_10sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_32sdp"
+                android:baselineAligned="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/address"
+                app:theme="@style/TextLabel">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                    android:id="@+id/edt_fb_account"
+                    style="@style/editTextRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_facebook"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:hint="@string/facebook_account"
+                    android:imeOptions="actionNext"
+                    android:padding="@dimen/_10sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_32sdp"
+                android:baselineAligned="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+                app:theme="@style/TextLabel">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                    android:id="@+id/edt_linkedin_account"
+                    style="@style/editTextRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_linkedin"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:hint="@string/linked_in_acccount"
+                    android:imeOptions="actionNext"
+                    android:padding="@dimen/_10sdp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_32sdp"
+                android:baselineAligned="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+                app:theme="@style/TextLabel">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                    android:id="@+id/edt_insta_account"
+                    style="@style/editTextRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_instagram"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:hint="@string/insta_account"
+                    android:imeOptions="actionNext" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_32sdp"
+                android:baselineAligned="true"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+                app:theme="@style/TextLabel">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                    android:id="@+id/edt_license_experience"
+                    style="@style/editTextRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_date"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:hint="@string/driving_exp"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:padding="@dimen/_10sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                android:id="@+id/edt_class_license"
+                style="@style/editTextRegular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_32sdp"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="@string/licenc_held"
+                android:imeOptions="actionNext"
+                android:padding="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
+
+
+            <Spinner
+                android:id="@+id/spin_class"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_32sdp"
+                android:padding="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_class_license" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="true"
+                android:layout_marginStart="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_32sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spin_class"
+                app:theme="@style/TextLabel">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                    android:id="@+id/edt_lang_spoke"
+                    style="@style/editTextRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/lang_spoken"
+                    android:drawableLeft="@drawable/ic_language"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:imeOptions="actionNext" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="true"
+                android:layout_marginStart="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_32sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout5"
+                app:theme="@style/TextLabel">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                    android:id="@+id/edt_hobies"
+                    style="@style/editTextRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hobiies"
+                    android:drawableLeft="@drawable/ic_activity"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:imeOptions="actionNext" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:baselineAligned="true"
+                android:layout_marginStart="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_32sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout6"
+                app:theme="@style/TextLabel">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                    android:id="@+id/edt_interest"
+                    style="@style/editTextRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/interest"
+                    android:drawableLeft="@drawable/ic_activity"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:imeOptions="actionNext" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llInterest"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_32sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout7"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:hint="@string/interest"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext" />
+                <Spinner
+                    android:id="@+id/spin_interest"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                </Spinner>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llWheels"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_32sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/llInterest"
+                android:orientation="vertical">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wheel_drive" />
+
+                <RadioGroup
+                    android:id="@+id/rg_wheel_drive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_2_wheel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/two_wheel" />
+
+                    <RadioButton
+                        android:id="@+id/radio_4_wheel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/four_wheel" />
+
+                    <RadioButton
+                        android:id="@+id/radio_all_wheel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/all_wheel" />
+
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llmusic"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_32sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/llWheels"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:hint="@string/music_pref"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext" />
+                <Spinner
+                    android:id="@+id/spin_music_pref"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                </Spinner>
+            </LinearLayout>
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                android:id="@id/tvSmoking"
+                android:layout_width="match_parent"
+                android:text="@string/smoking"
+                android:layout_marginStart="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_32sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/llmusic"
+                android:layout_height="wrap_content" />
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/rg_smoke"
+                android:layout_marginStart="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_32sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSmoking"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/smoking_yes"
+                    android:layout_weight="1"
+                    android:text="@string/yes"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/smoking_no"
+
+                    android:text="@string/no"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                android:id="@id/tvPetFriendly"
+                android:layout_width="match_parent"
+                android:text="@string/petfriendly"
+                android:layout_marginStart="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_32sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rg_smoke"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/rg_pet"
+                android:layout_marginStart="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_32sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvPetFriendly"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/pet_yes"
+                    android:layout_weight="1"
+                    android:text="@string/yes"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/pet_no"
+                    android:text="@string/no"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+
+            <LinearLayout
+                android:id="@+id/llLicense"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_32sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rg_pet"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:theme="@style/TextLabel">
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                        android:id="@+id/edt_driver_license_no"
+                        style="@style/editTextRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/driver_license_no"
+                        android:padding="@dimen/_10sdp"
+                        android:imeOptions="actionNext" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                    android:id="@+id/txt_exp_date"
+                    style="@style/regularblackTextviewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:drawableRight="@drawable/ic_date"
+                    android:padding="@dimen/_10sdp"
+                    android:hint="@string/license_exp_date" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:padding="@dimen/_10sdp"
+
+                    android:background="@color/colorDarkGray" />
+                <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                    android:id="@+id/txt_issue_date"
+                    style="@style/regularblackTextviewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:drawableRight="@drawable/ic_date"
+                    android:hint="@string/license_issue_date" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:baselineAligned="true"
+                    app:theme="@style/TextLabel">
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                        android:id="@+id/edt_state_issue"
+                        style="@style/editTextRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_10sdp"
+                        android:hint="@string/state_of_issue"
+                        android:imeOptions="actionNext" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLicensePic"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_32sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/llLicense"
+                android:padding="@dimen/_10sdp">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                    style="@style/regularTextviewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/driver_lic_pic" />
+
+                <ImageView
+                    android:id="@+id/iv_driver_license"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_gallery" />
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@id/Licensewrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="true"
+                android:layout_marginStart="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_32sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/llLicensePic"
+                android:visibility="gone"
+                app:theme="@style/TextLabel">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                    android:id="@+id/edt_licence_nn"
+                    style="@style/editTextRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:padding="@dimen/_10sdp"
+                    android:focusable="false"
+                    android:hint="@string/driver_license_no"
+                    android:imeOptions="actionNext" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@id/editLicensewrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_32sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Licensewrapper"                android:baselineAligned="true"
+                android:visibility="gone"
+                app:theme="@style/TextLabel">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                    android:id="@+id/edt_licence_nn"
+                    style="@style/editTextRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:padding="@dimen/_10sdp"
+                    android:hint="@string/driver_license_no"
+                    android:imeOptions="actionNext" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tveditLicense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_32sdp"
+                android:baselineAligned="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editLicensewrapper"
+                android:visibility="gone"
+                app:theme="@style/TextLabel">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                    android:id="@+id/edt_expdate"
+                    style="@style/editTextRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="@string/driver_license_exp_date"
+                    android:imeOptions="actionDone" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceButton
+                android:id="@+id/save"
+                style="@style/yellowButton"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_32sdp"
+                android:layout_marginBottom="@dimen/_32sdp"
+                android:text="@string/save"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tveditLicense" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <include layout="@layout/progress_bar_layout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

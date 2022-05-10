@@ -1,0 +1,162 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_fragment_upper">
+
+    <com.apps.freeroadingdriver.customviews.TypeFaceTextviewItalicBold
+        android:id="@+id/title"
+        style="@style/whiteHeadingTextviewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aristapro"
+        android:text="@string/login_cap"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_25ssp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@drawable/newlogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_32sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_32sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:theme="@style/TextLabel">
+
+        <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+            android:id="@+id/email_edittext"
+            style="@style/editTextRegular"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:hintEnabled="false"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="@dimen/_5sdp"
+            android:hint="@string/hint_email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/_10sdp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_32sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_32sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailWrapper"
+        app:theme="@style/TextLabel">
+
+        <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+            android:id="@+id/password_edittext"
+            style="@style/editTextRegular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_password"
+            android:drawablePadding="@dimen/_5sdp"
+            android:hint="@string/password"
+            android:imeOptions="actionDone"
+            app:hintEnabled="false"
+            android:inputType="textPassword|textNoSuggestions"
+            android:padding="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailWrapper" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="285dp" />
+
+
+    <com.apps.freeroadingdriver.customviews.TypeFaceButton
+        android:id="@+id/loginbutton"
+        style="@style/yellowButton"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_32sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_32sdp"
+        android:text="@string/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordWrapper" />
+
+    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+        android:id="@+id/forgotpassword"
+        style="@style/regularblackTextviewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:fontFamily="@font/aristalight"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/forgotpassword_txt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginbutton" />
+
+    <LinearLayout
+        android:id="@+id/signupHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:gravity="center"
+
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forgotpassword">
+
+        <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+            style="@style/regularblackTextviewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aristalight"
+            android:text="@string/donthaveaccount"
+            android:textStyle="bold" />
+
+
+        <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+            android:id="@+id/signupLabel"
+            style="@style/regularblackTextviewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:fontFamily="@font/aristalight"
+            android:text="@string/signup_underline"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <include layout="@layout/progress_bar_layout"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_ride_request_action"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_160sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/ll_ride_request_detail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_185sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/bg_corner_border_darkgray"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_12sdp">
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                android:id="@+id/tv_pick_up_address_title"
+                style="@style/smallregularTextviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pickup_location" />
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                android:id="@+id/tv_pick_up_address"
+                style="@style/regularblackTextviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                android:id="@+id/tv_arrival_distance_title"
+                style="@style/smallregularTextviewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="@string/estimated_time" />
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                android:id="@+id/tv_arrival_distance"
+                style="@style/regularblackTextviewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                android:id="@+id/tv_arrival_timing_title"
+                style="@style/regularblackTextviewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+            android:id="@+id/tv_ride_request_booking_id"
+            style="@style/regularblackTextviewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/white_rectshape"
+            android:padding="@dimen/_5sdp"
+            android:text="                     " />
+
+    </RelativeLayout>
+
+    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_16ssp"
+        android:id="@+id/txt_timer"
+        style="@style/CircularProgress"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text=""
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_20sdp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <com.apps.freeroadingdriver.customviews.TypeFaceButton
+            style="@style/yellowButton"
+            android:id="@+id/btn_accept_request"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_3sdp"
+            android:layout_weight=".5"
+            android:text="@string/accept" />
+
+        <com.apps.freeroadingdriver.customviews.TypeFaceButton
+            style="@style/redButton"
+            android:id="@+id/btn_reject_request"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_3sdp"
+            android:layout_weight=".5"
+            android:text="@string/reject" />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

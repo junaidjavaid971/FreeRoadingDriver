@@ -1,0 +1,447 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/invoice_top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_180sdp"
+                android:layout_alignParentTop="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_125sdp"
+                    android:background="@drawable/bg_gray"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_50sdp"
+                    android:paddingRight="@dimen/_50sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_4sdp"
+                        android:weightSum="2">
+
+                        <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                            android:id="@+id/tv_invoice_price_title"
+                            style="@style/regularblackTextviewStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity=""
+                            android:text="@string/price" />
+
+                        <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                            android:id="@+id/tv_invoice_price_value"
+                            style="@style/regularblackTextviewStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right" />
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_4sdp"
+                        android:weightSum="2">
+
+                        <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                            style="@style/regularblackTextviewStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/wating_charge" />
+
+                        <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                            android:id="@+id/tv_invoice_waiting_charge_value"
+                            style="@style/regularblackTextviewStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_4sdp"
+                        android:weightSum="2">
+
+                        <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                            style="@style/regularblackTextviewStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/wating_time" />
+
+                        <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                            android:id="@+id/tv_invoice_waiting_time"
+                            style="@style/regularblackTextviewStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_4sdp"
+                        android:weightSum="2">
+
+                        <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                            android:id="@+id/tv_invoice_servicecharge_title"
+                            style="@style/regularblackTextviewStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/service_charge" />
+
+                        <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                            android:id="@+id/tv_invoice_servicecharge_value"
+                            style="@style/regularblackTextviewStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_4sdp"
+                        android:weightSum="2">
+
+                        <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                            android:id="@+id/tv_invoice_total_title"
+                            style="@style/regularblackTextviewStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/total" />
+
+                        <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                            android:id="@+id/tv_invoice_total_value"
+                            style="@style/regularblackTextviewStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                    android:id="@+id/tv_payment_booking_id"
+                    style="@style/regularblackTextviewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="@dimen/_35sdp"
+                    android:background="@drawable/bg_corner_border_white"
+                    android:padding="@dimen/_7sdp"
+                    android:text="" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/invoice_ride_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/invoice_top_layout"
+                android:layout_margin="@dimen/_12sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <!--
+
+                        <LinearLayout android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:weightSum="1"
+                            android:orientation="horizontal">
+                -->
+                <!--
+                            <LinearLayout android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".1"
+                                android:gravity="center"
+                                android:layout_marginTop="@dimen/dp7"
+                                android:layout_marginBottom="@dimen/dp22"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ci_blackdot_small"/>
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorBlack"/>
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ci_greendot_small"/>
+                                <View
+                                    android:id="@+id/tv_destination_to_new_address_line"
+                                    android:layout_width="1dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorBlack"/>
+                                <ImageView
+                                    android:id="@+id/tv_destination_to_new_address_dots"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ci_greendot_small"/>
+                            </LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_4sdp">
+
+                        <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                            android:id="@+id/tv_invoice_ride_pickup_address_title"
+                            style="@style/smallregularTextviewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_dots_black_small"
+                            android:drawablePadding="@dimen/_7sdp"
+                            android:text="@string/pickup_location" />
+
+                        <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                            android:id="@+id/tv_invoice_ride_pickup_address_value"
+                            style="@style/regularblackTextviewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_17sdp"
+                            android:maxLines="2"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_4sdp">
+
+                        <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                            android:id="@+id/tv_invoice_ride_drop_address_title"
+                            style="@style/smallregularTextviewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_dots_orange_small"
+                            android:drawablePadding="@dimen/_7sdp"
+                            android:text="@string/drop_location" />
+
+                        <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                            android:id="@+id/tv_invoice_ride_drop_address_value"
+                            style="@style/regularblackTextviewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_17sdp"
+                            android:maxLines="2" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_ride_new_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_4sdp">
+
+                        <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                            android:id="@+id/tv_invoice_ride_new_address_title"
+                            style="@style/smallregularTextviewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_dots_orange_small"
+                            android:drawablePadding="@dimen/_7sdp"
+                            android:maxLines="1"
+                            android:text="@string/new_dropoff_location" />
+
+                        <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                            android:id="@+id/tv_invoice_ride_new_address_value"
+                            style="@style/regularblackTextviewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_17sdp"
+                            android:maxLines="2" />
+                        <!-- </LinearLayout>-->
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_gray"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_4sdp">
+
+                        <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                            android:id="@+id/tv_invoice_ride_duration_title"
+                            style="@style/regularblackTextviewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/duration"
+                            android:textAllCaps="true" />
+
+                        <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                            android:id="@+id/tv_invoice_ride_duration_value"
+                            style="@style/regularblackTextviewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_4sdp">
+
+                        <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                            android:id="@+id/tv_invoice_ride_distance_title"
+                            style="@style/regularblackTextviewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/distance"
+                            android:textAllCaps="true" />
+
+                        <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                            android:id="@+id/tv_invoice_ride_drop_distance_value"
+                            style="@style/regularblackTextviewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_ride_waiting_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_4sdp">
+
+                        <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                            android:id="@+id/tv_invoice_ride_wait_title"
+                            style="@style/regularblackTextviewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Avg speed"
+                            android:textAllCaps="true" />
+
+                        <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                            android:id="@+id/tv_invoice_ride_wait_value"
+                            style="@style/regularblackTextviewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                style="@style/headingTextviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/rate_the_customer"
+                android:textStyle="bold" />
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                style="@style/headingTextviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/how_was_the_customer" />
+
+            <RatingBar
+                android:id="@+id/driverRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:theme="@style/RatingBar" />
+
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                style="@style/headingTextviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/write_review" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/bg_corner_border_white"
+                android:padding="@dimen/_10sdp">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                    android:id="@+id/review"
+                    style="@style/backgroundLesseditTextRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceButton
+                android:id="@+id/btn_finish_ride"
+                style="@style/yellowButton"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@+id/invoice_ride_details"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_50sdp"
+                android:text="@string/finish" />
+        </LinearLayout>
+
+        <include
+            layout="@layout/progress_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+</ScrollView>

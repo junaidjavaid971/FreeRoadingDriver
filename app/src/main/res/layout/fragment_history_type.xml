@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    >
+
+    <com.apps.freeroadingdriver.customviews.TypeFaceTextviewItalicBold
+        style="@style/whiteHeadingTextviewStyle"
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:text="@string/choose_options" />
+
+
+    <com.apps.freeroadingdriver.customviews.TypeFaceButton
+        style="@style/yellowButton"
+        android:id="@+id/btn_passenger"
+        android:text="@string/as_a_passenger"
+        android:textAllCaps="false"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_centerInParent="true"/>
+<TextView
+    android:layout_below="@+id/btn_passenger"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="OR"
+    android:textSize="@dimen/_14ssp"
+    android:textColor="@color/black_alpha_40"
+    />
+
+    <com.apps.freeroadingdriver.customviews.TypeFaceButton
+        style="@style/yellowButton"
+        android:id="@+id/btn_driver"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_below="@+id/btn_passenger"
+        android:text="@string/as_a_driver"
+        android:textAllCaps="false"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_centerInParent="true"/>
+
+
+</RelativeLayout>

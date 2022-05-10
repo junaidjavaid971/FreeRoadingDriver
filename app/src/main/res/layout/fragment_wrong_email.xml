@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/arrow_header_layout"/>
+
+    <com.apps.freeroadingdriver.customviews.TypeFaceTextviewItalicBold
+        android:id="@+id/title"
+        style="@style/whiteHeadingTextviewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:text="@string/mobile_number_nnot_found"/>
+
+    <ImageView
+        android:layout_below="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:id="@+id/cross"
+        android:src="@drawable/close"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mobile_not_found"
+        style="@style/regularblackTextviewStyle"
+        android:gravity="center"
+        android:layout_margin="@dimen/_25sdp"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"/>
+
+</RelativeLayout>

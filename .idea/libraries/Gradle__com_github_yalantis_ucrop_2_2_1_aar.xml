@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.yalantis:ucrop:2.2.1@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/1507a79ae1a0fee2954d95f3984e3d2d/transformed/jetified-ucrop-2.2.1/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/0a50d1fdc6f425d83d50d58ef2580fa6/transformed/jetified-ucrop-2.2.1/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/1507a79ae1a0fee2954d95f3984e3d2d/transformed/jetified-ucrop-2.2.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1507a79ae1a0fee2954d95f3984e3d2d/transformed/jetified-ucrop-2.2.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1507a79ae1a0fee2954d95f3984e3d2d/transformed/jetified-ucrop-2.2.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0a50d1fdc6f425d83d50d58ef2580fa6/transformed/jetified-ucrop-2.2.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/0a50d1fdc6f425d83d50d58ef2580fa6/transformed/jetified-ucrop-2.2.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0a50d1fdc6f425d83d50d58ef2580fa6/transformed/jetified-ucrop-2.2.1/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.yalantis/ucrop/2.2.1/5b8d44ff9c185862129abdd6706375415a58ff28/ucrop-2.2.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.yalantis/ucrop/2.2.1/e785cbf1152f706076ef6034bf7b3076842c401b/ucrop-2.2.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

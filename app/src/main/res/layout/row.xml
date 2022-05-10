@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <!--    <ImageView
+            android:id="@+id/row_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp" />-->
+
+    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+        android:id="@+id/row_title"
+        style="@style/regularblackTextviewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/country_code"
+        android:padding="10dp"
+        android:singleLine="true" />
+
+    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+        android:id="@+id/country_code"
+        style="@style/regularblackTextviewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp" />
+
+</RelativeLayout>

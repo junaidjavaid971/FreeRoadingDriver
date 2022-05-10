@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.apps.freeroadingdriver.fragments.ActiveRideListFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/activeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_10sdp"
+        tools:listitem="@layout/row_active_ride" />
+
+    <include layout="@layout/progress_bar_layout" />
+
+</RelativeLayout>

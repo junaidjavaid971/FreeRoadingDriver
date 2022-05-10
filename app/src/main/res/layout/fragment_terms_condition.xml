@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+    <include layout="@layout/arrow_black_header_layout"
+        android:id="@+id/blackHeader"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/blackHeader">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                android:id="@+id/terms_condition_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/regularblackTextviewStyle"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/progress_bar_layout"/>
+</RelativeLayout>

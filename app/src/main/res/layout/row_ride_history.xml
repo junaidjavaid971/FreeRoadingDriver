@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/white_rectshape"
+    android:layout_margin="@dimen/_5sdp"
+    app:cardElevation="@dimen/_2sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:padding="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:id="@+id/bookingHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                android:id="@+id/labelBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/regularblackTextviewStyle"
+                android:text="@string/booking_id"/>
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                android:id="@+id/bookingId"
+                android:layout_toRightOf="@+id/labelBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/regularblackTextviewStyle"
+                android:text=""/>
+
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                android:id="@+id/date"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/smallregularTextviewStyle"
+                android:text=""
+                android:layout_marginRight="@dimen/_10sdp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bookingHolder"
+            android:layout_toLeftOf="@+id/price"
+            android:id="@+id/heading_view">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_dots_black_small"
+                android:id="@+id/loc"/>
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                style="@style/veryverysmallTextview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pick_loc"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:text="@string/pickup_location"
+                android:singleLine="true"
+                android:layout_toRightOf="@+id/loc"/>
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:background="@color/crop__selector_pressed"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_below="@+id/heading_view"
+            android:id="@+id/line"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/price"
+            android:layout_below="@+id/line">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_dots_orange_small"
+                android:id="@+id/loc1"/>
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                style="@style/veryverysmallTextview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/drop_loc"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:text="@string/drop_location"
+                android:singleLine="true"
+                android:layout_toRightOf="@+id/loc1"/>
+
+
+        </RelativeLayout>
+
+        <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+            android:layout_toLeftOf="@+id/rigthwing"
+            android:id="@+id/price"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/regularblackTextviewStyle"
+            android:text=""
+            android:layout_marginRight="@dimen/_10sdp"/>
+
+        <ImageView
+            android:id="@+id/rigthwing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_right"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.apps.freeroadingdriver.fragments.CancelRequestFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_15sdp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_15sdp">
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/driverReachLate"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:button="@null"
+                    android:checked="true"
+                    android:background="@drawable/bg_checkbox_circle"
+                    />
+                <RadioButton
+                    android:id="@+id/noContactDriver"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:button="@null"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_checkbox_circle"
+                    />
+
+                <RadioButton
+                    android:id="@+id/driverRequestToCancel"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:button="@null"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_checkbox_circle"
+                    />
+
+                <RadioButton
+                    android:id="@+id/otherReason"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:button="@null"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_checkbox_circle"
+                    />
+
+                <RadioButton
+                    android:id="@+id/donocanceltrip"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:button="@null"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_checkbox_circle"
+                    />
+
+                <RadioButton
+                    android:id="@+id/nolongerwait"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:button="@null"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_checkbox_circle"
+                    />
+
+                <RadioButton
+                    android:id="@+id/cancelfee"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:button="@null"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_checkbox_circle"
+                    />
+
+
+            </RadioGroup>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                    android:id="@+id/clientnotshown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_25sdp"
+                    style="@style/regularblackTextviewStyle"
+                    android:text="@string/client_not_shown"/>
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                    android:id="@+id/clientCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_25sdp"
+                    style="@style/regularblackTextviewStyle"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/client_requested_to_cancel"/>
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                    android:id="@+id/wrongAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_25sdp"
+                    style="@style/regularblackTextviewStyle"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/wrong_address_shown"/>
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                    android:id="@+id/otherReasonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_25sdp"
+                    style="@style/regularblackTextviewStyle"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/other_reason"/>
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                    android:id="@+id/doNotCancelTrip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_25sdp"
+                    style="@style/regularblackTextviewStyle"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/do_not"/>
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                    android:id="@+id/cancelCanLonger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_25sdp"
+                    style="@style/regularblackTextviewStyle"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/cancel_can_longer_do_the_ride"/>
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                    android:id="@+id/cancelLong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_55sdp"
+                    style="@style/regularblackTextviewStyle"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/cancel_with_cancellation_fee_customer_is_not_here_7_minutes_after_arrival"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <com.apps.freeroadingdriver.customviews.TypeFaceButton
+            android:id="@+id/submit"
+            style="@style/yellowButton"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="@string/submit_btn" />
+
+    </LinearLayout>
+
+    <include layout="@layout/progress_bar_layout"/>
+</RelativeLayout>

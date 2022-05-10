@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/setting_bg">
+
+    <include layout="@layout/arrow_black_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/top"/>
+
+    <ScrollView
+        android:layout_below="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <!--    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:padding="@dimen/_15sdp">
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/regularblackTextviewStyle"
+                android:text="@string/when_driver_arrived" />
+
+            <CheckBox
+                android:id="@+id/cb_driver_sound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:button="@drawable/active_inactive" />
+        </RelativeLayout>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:padding="@dimen/_15sdp">
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/regularblackTextviewStyle"
+                android:text="@string/sound" />
+
+            <CheckBox
+                android:id="@+id/cb_notification_sound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:button="@drawable/active_inactive" />
+        </RelativeLayout>
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                style="@style/regularblackTextviewStyle"
+                android:id="@+id/tv_profile_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:padding="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/profile_settings" />
+
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                style="@style/regularblackTextviewStyle"
+                android:id="@+id/tv_help"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_15sdp"
+                android:background="@color/colorWhite"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/help" />
+
+
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                style="@style/regularblackTextviewStyle"
+                android:id="@+id/tv_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_15sdp"
+                android:background="@color/colorWhite"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="@string/contact_us" />
+
+        <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+            style="@style/regularblackTextviewStyle"
+            android:id="@+id/tv_reset_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:padding="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="@string/reset_password" />
+
+        <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+            style="@style/regularblackTextviewStyle"
+            android:id="@+id/tv_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:padding="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="@string/language" />
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                style="@style/regularblackTextviewStyle"
+                android:id="@+id/tv_terms_condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_15sdp"
+                android:background="@color/colorWhite"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="@string/tnc" />
+
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                style="@style/regularblackTextviewStyle"
+                android:id="@+id/tv_privacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_15sdp"
+                android:background="@color/colorWhite"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="@string/privacy_policy" />
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

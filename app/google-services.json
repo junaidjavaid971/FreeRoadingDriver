@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "227404231830",
+    "firebase_url": "https://freeroading.firebaseio.com",
+    "project_id": "freeroading",
+    "storage_bucket": "freeroading.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:227404231830:android:063693fab9e9cd0f",
+        "android_client_info": {
+          "package_name": "com.apps.freeroadingdriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "227404231830-pjia38tmjav0oma64h8i5r1pnholres9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.apps.freeroadingdriver",
+            "certificate_hash": "dc7959d9ead22ded6ced9fb4837f0d6b1ec90fa1"
+          }
+        },
+        {
+          "client_id": "227404231830-kao15qolu8c0fl5aah83thd1rc7v6ak8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEqfh41N45KHJOi0NuXld6NdnMt1ZeTaM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "227404231830-kao15qolu8c0fl5aah83thd1rc7v6ak8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,370 @@
+<resources>
+    <string name="app_name">Conductor de FreeRoading</string>
+    <string name="camera">Cámara</string>
+    <string name="gallery">Galería</string>
+    <string name="choose_media">Elegir medios</string>
+    <string name="ok">DE ACUERDO</string>
+    <string name="cancel">Cancelar</string>
+    <string name="error">Error</string>
+    <string name="no_internet_connection">Sin conexión a Internet</string>
+    <string name="msg_session_expired">Tu sesión ha terminado \n Please login again!</string>
+    <string name="msg_server_error">Hay un problema con nuestro sistema. Pedimos disculpas por las molestias causadas. Por favor, inténtelo de nuevo más tarde. Si el problema persiste, por favor contáctenos.</string>
+    <string name="permission">Permiso</string>
+    <string name="phone_permission_rationale">Se requieren permisos telefónicos para continuar "
+    </string>
+    <string name="easy_ride_anywhere">Drive <font color="red"><b>Live </b></font>Ride</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="loginunderline"><u>Iniciar sesión</u></string>
+    <string name="sign_up">Regístrate</string>
+    <string name="hint_email">Email / Número de Móvil</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="show_txt">Show</string>
+    <string name="forgotpassword_txt">Se te olvidó tu contraseña?</string>
+    <string name="password">Contraseña</string>
+    <string name="donthaveaccount">¿No tienes una cuenta?</string>
+    <string name="signup_underline"><u>Regístrate</u></string>
+    <string name="forgot_your_password">¿Olvidaste tu contraseña?</string>
+    <string name="font_opensans_light">OpenSans-Light.ttf</string>
+    <string name="check_email_for_otp">Revisa tu móvil. Acabamos de enviarte un OTP. Por favor ingréselo a continuación para elegir una nueva contraseña.</string>
+    <string name="verify">Verificar</string>
+    <string name="hint_enter_otp">Ingrese el número OTP</string>
+    <string name="click_here"><u>haga clic aquí</u></string>
+    <string name="to_resend">reenviar.</string>
+    <string name="didn_t_receive_the_otp_on_your_email">¿No recibió la OTP en su móvil?</string>
+    <string name="hint_new_password">Nueva contraseña</string>
+    <string name="confirm_new_password">Confirmar nueva contraseña</string>
+    <string name="confirm_password">Confirmar contraseña</string>
+    <string name="submit_btn">Enviar</string>
+    <string name="choose_your_new_password">Elige tu nueva contraseña</string>
+    <string name="enter_code">Introduzca el código</string>
+    <string name="logout_text">¿Estás seguro de que quieres cerrar sesión?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hola fragmento en blanco</string>
+    <string name="reset">Reiniciar</string>
+    <string name="mobile_number">Número de teléfono móvil</string>
+    <string name="please_enter_your_phone_no_and_we_ll_send_you_an_otp_to_reset_your_password">Ingrese su número de teléfono y le enviaremos un OTP para restablecer su contraseña.</string>
+    <string name="mobile_not_found">El número de teléfono móvil especificado no se encontró en nuestro sistema. Por favor, asegúrese de usar el número de teléfono móvil que se utilizó durante el registro.</string>
+    <string name="enter_confirmation_code_that_was_sent_to_your_registered_email_address">Ingrese el número de OTP que se envió a su número de móvil registrado.</string>
+    <string name="enter_nmobile_nubmer">ENTRAR NÚMER MÓVIL</string>
+    <string name="mobile_number_nnot_found">NUMERO MOVIL NO ENCONTRADO</string>
+    <string name="otp_sent">OTP ENVIADO</string>
+    <string name="choose_your_new_pass">ELIGE TU NUEVA CONTRASEÑA</string>
+    <string name="sign_up_cap">REGÍSTRATE</string>
+    <string name="hint_name">Nombre</string>
+    <string name="email">Email</string>
+    <string name="by_signing_up_you_agree_to">Al registrarte, aceptas</string>
+    <string name="terms_amp_conditions"><u><![CDATA[Términos y condiciones]]></u></string>
+    <string name="already_have_an_account">¿Ya tienes una cuenta?</string>
+    <string name="mobile_verification">\ NONIFICACIÓN MÓVIL</string>
+    <string name="wrong_otp">OTP equivocada</string>
+    <string name="countries_code">W3sibmFtZSI6IkFmZ2hhbmlzdGFuIiwiZGlhbF9jb2RlIjoiKzkzIiwiY29kZSI6IkFGIn0seyJuYW1lIjoiQWxiYW5pYSIsImRpYWxfY29kZSI6IiszNTUiLCJjb2RlIjoiQUwifSx7Im5hbWUiOiJBbGdlcmlhIiwiZGlhbF9jb2RlIjoiKzIxMyIsImNvZGUiOiJEWiJ9LHsibmFtZSI6IkFtZXJpY2FuU2Ftb2EiLCJkaWFsX2NvZGUiOiIrMSA2ODQiLCJjb2RlIjoiQVMifSx7Im5hbWUiOiJBbmRvcnJhIiwiZGlhbF9jb2RlIjoiKzM3NiIsImNvZGUiOiJBRCJ9LHsibmFtZSI6IkFuZ29sYSIsImRpYWxfY29kZSI6IisyNDQiLCJjb2RlIjoiQU8ifSx7Im5hbWUiOiJBbmd1aWxsYSIsImRpYWxfY29kZSI6IisxIDI2NCIsImNvZGUiOiJBSSJ9LHsibmFtZSI6IkFudGFyY3RpY2EiLCJkaWFsX2NvZGUiOiIrNjcyIiwiY29kZSI6IkFRIn0seyJuYW1lIjoiQW50aWd1YSBhbmQgQmFyYnVkYSIsImRpYWxfY29kZSI6IisxMjY4IiwiY29kZSI6IkFHIn0seyJuYW1lIjoiQXJnZW50aW5hIiwiZGlhbF9jb2RlIjoiKzU0IiwiY29kZSI6IkFSIn0seyJuYW1lIjoiQXJtZW5pYSIsImRpYWxfY29kZSI6IiszNzQiLCJjb2RlIjoiQU0ifSx7Im5hbWUiOiJBcnViYSIsImRpYWxfY29kZSI6IisyOTciLCJjb2RlIjoiQVcifSx7Im5hbWUiOiJBdXN0cmFsaWEiLCJkaWFsX2NvZGUiOiIrNjEiLCJjb2RlIjoiQVUifSx7Im5hbWUiOiJBdXN0cmlhIiwiZGlhbF9jb2RlIjoiKzQzIiwiY29kZSI6IkFUIn0seyJuYW1lIjoiQXplcmJhaWphbiIsImRpYWxfY29kZSI6Iis5OTQiLCJjb2RlIjoiQVoifSx7Im5hbWUiOiJCYWhhbWFzIiwiZGlhbF9jb2RlIjoiKzEgMjQyIiwiY29kZSI6IkJTIn0seyJuYW1lIjoiQmFocmFpbiIsImRpYWxfY29kZSI6Iis5NzMiLCJjb2RlIjoiQkgifSx7Im5hbWUiOiJCYW5nbGFkZXNoIiwiZGlhbF9jb2RlIjoiKzg4MCIsImNvZGUiOiJCRCJ9LHsibmFtZSI6IkJhcmJhZG9zIiwiZGlhbF9jb2RlIjoiKzEgMjQ2IiwiY29kZSI6IkJCIn0seyJuYW1lIjoiQmVsYXJ1cyIsImRpYWxfY29kZSI6IiszNzUiLCJjb2RlIjoiQlkifSx7Im5hbWUiOiJCZWxnaXVtIiwiZGlhbF9jb2RlIjoiKzMyIiwiY29kZSI6IkJFIn0seyJuYW1lIjoiQmVsaXplIiwiZGlhbF9jb2RlIjoiKzUwMSIsImNvZGUiOiJCWiJ9LHsibmFtZSI6IkJlbmluIiwiZGlhbF9jb2RlIjoiKzIyOSIsImNvZGUiOiJCSiJ9LHsibmFtZSI6IkJlcm11ZGEiLCJkaWFsX2NvZGUiOiIrMSA0NDEiLCJjb2RlIjoiQk0ifSx7Im5hbWUiOiJCaHV0YW4iLCJkaWFsX2NvZGUiOiIrOTc1IiwiY29kZSI6IkJUIn0seyJuYW1lIjoiQm9saXZpYSwgUGx1cmluYXRpb25hbCBTdGF0ZSBvZiIsImRpYWxfY29kZSI6Iis1OTEiLCJjb2RlIjoiQk8ifSx7Im5hbWUiOiJCb3NuaWEgYW5kIEhlcnplZ292aW5hIiwiZGlhbF9jb2RlIjoiKzM4NyIsImNvZGUiOiJCQSJ9LHsibmFtZSI6IkJvdHN3YW5hIiwiZGlhbF9jb2RlIjoiKzI2NyIsImNvZGUiOiJCVyJ9LHsibmFtZSI6IkJyYXppbCIsImRpYWxfY29kZSI6Iis1NSIsImNvZGUiOiJCUiJ9LHsibmFtZSI6IkJyaXRpc2ggSW5kaWFuIE9jZWFuIFRlcnJpdG9yeSIsImRpYWxfY29kZSI6IisyNDYiLCJjb2RlIjoiSU8ifSx7Im5hbWUiOiJCcnVuZWkgRGFydXNzYWxhbSIsImRpYWxfY29kZSI6Iis2NzMiLCJjb2RlIjoiQk4ifSx7Im5hbWUiOiJCdWxnYXJpYSIsImRpYWxfY29kZSI6IiszNTkiLCJjb2RlIjoiQkcifSx7Im5hbWUiOiJCdXJraW5hIEZhc28iLCJkaWFsX2NvZGUiOiIrMjI2IiwiY29kZSI6IkJGIn0seyJuYW1lIjoiQnVydW5kaSIsImRpYWxfY29kZSI6IisyNTciLCJjb2RlIjoiQkkifSx7Im5hbWUiOiJDYW1ib2RpYSIsImRpYWxfY29kZSI6Iis4NTUiLCJjb2RlIjoiS0gifSx7Im5hbWUiOiJDYW1lcm9vbiIsImRpYWxfY29kZSI6IisyMzciLCJjb2RlIjoiQ00ifSx7Im5hbWUiOiJDYW5hZGEiLCJkaWFsX2NvZGUiOiIrMSIsImNvZGUiOiJDQSJ9LHsibmFtZSI6IkNhcGUgVmVyZGUiLCJkaWFsX2NvZGUiOiIrMjM4IiwiY29kZSI6IkNWIn0seyJuYW1lIjoiQ2F5bWFuIElzbGFuZHMiLCJkaWFsX2NvZGUiOiIrIDM0NSIsImNvZGUiOiJLWSJ9LHsibmFtZSI6IkNlbnRyYWwgQWZyaWNhbiBSZXB1YmxpYyIsImRpYWxfY29kZSI6IisyMzYiLCJjb2RlIjoiQ0YifSx7Im5hbWUiOiJDaGFkIiwiZGlhbF9jb2RlIjoiKzIzNSIsImNvZGUiOiJURCJ9LHsibmFtZSI6IkNoaWxlIiwiZGlhbF9jb2RlIjoiKzU2IiwiY29kZSI6IkNMIn0seyJuYW1lIjoiQ2hpbmEiLCJkaWFsX2NvZGUiOiIrODYiLCJjb2RlIjoiQ04ifSx7Im5hbWUiOiJDaHJpc3RtYXMgSXNsYW5kIiwiZGlhbF9jb2RlIjoiKzYxIiwiY29kZSI6IkNYIn0seyJuYW1lIjoiQ29jb3MgKEtlZWxpbmcpIElzbGFuZHMiLCJkaWFsX2NvZGUiOiIrNjEiLCJjb2RlIjoiQ0MifSx7Im5hbWUiOiJDb2xvbWJpYSIsImRpYWxfY29kZSI6Iis1NyIsImNvZGUiOiJDTyJ9LHsibmFtZSI6IkNvbW9yb3MiLCJkaWFsX2NvZGUiOiIrMjY5IiwiY29kZSI6IktNIn0seyJuYW1lIjoiQ29uZ28iLCJkaWFsX2NvZGUiOiIrMjQyIiwiY29kZSI6IkNHIn0seyJuYW1lIjoiQ29uZ28sIFRoZSBEZW1vY3JhdGljIFJlcHVibGljIG9mIHRoZSIsImRpYWxfY29kZSI6IisyNDMiLCJjb2RlIjoiQ0QifSx7Im5hbWUiOiJDb29rIElzbGFuZHMiLCJkaWFsX2NvZGUiOiIrNjgyIiwiY29kZSI6IkNLIn0seyJuYW1lIjoiQ29zdGEgUmljYSIsImRpYWxfY29kZSI6Iis1MDYiLCJjb2RlIjoiQ1IifSx7Im5hbWUiOiJDb3RlIGQnSXZvaXJlIiwiZGlhbF9jb2RlIjoiKzIyNSIsImNvZGUiOiJDSSJ9LHsibmFtZSI6IkNyb2F0aWEiLCJkaWFsX2NvZGUiOiIrMzg1IiwiY29kZSI6IkhSIn0seyJuYW1lIjoiQ3ViYSIsImRpYWxfY29kZSI6Iis1MyIsImNvZGUiOiJDVSJ9LHsibmFtZSI6IkN5cHJ1cyIsImRpYWxfY29kZSI6IiszNTciLCJjb2RlIjoiQ1kifSx7Im5hbWUiOiJDemVjaCBSZXB1YmxpYyIsImRpYWxfY29kZSI6Iis0MjAiLCJjb2RlIjoiQ1oifSx7Im5hbWUiOiJEZW5tYXJrIiwiZGlhbF9jb2RlIjoiKzQ1IiwiY29kZSI6IkRLIn0seyJuYW1lIjoiRGppYm91dGkiLCJkaWFsX2NvZGUiOiIrMjUzIiwiY29kZSI6IkRKIn0seyJuYW1lIjoiRG9taW5pY2EiLCJkaWFsX2NvZGUiOiIrMSA3NjciLCJjb2RlIjoiRE0ifSx7Im5hbWUiOiJEb21pbmljYW4gUmVwdWJsaWMiLCJkaWFsX2NvZGUiOiIrMSA4NDkiLCJjb2RlIjoiRE8ifSx7Im5hbWUiOiJFY3VhZG9yIiwiZGlhbF9jb2RlIjoiKzU5MyIsImNvZGUiOiJFQyJ9LHsibmFtZSI6IkVneXB0IiwiZGlhbF9jb2RlIjoiKzIwIiwiY29kZSI6IkVHIn0seyJuYW1lIjoiRWwgU2FsdmFkb3IiLCJkaWFsX2NvZGUiOiIrNTAzIiwiY29kZSI6IlNWIn0seyJuYW1lIjoiRXF1YXRvcmlhbCBHdWluZWEiLCJkaWFsX2NvZGUiOiIrMjQwIiwiY29kZSI6IkdRIn0seyJuYW1lIjoiRXJpdHJlYSIsImRpYWxfY29kZSI6IisyOTEiLCJjb2RlIjoiRVIifSx7Im5hbWUiOiJFc3RvbmlhIiwiZGlhbF9jb2RlIjoiKzM3MiIsImNvZGUiOiJFRSJ9LHsibmFtZSI6IkV0aGlvcGlhIiwiZGlhbF9jb2RlIjoiKzI1MSIsImNvZGUiOiJFVCJ9LHsibmFtZSI6IkZhbGtsYW5kIElzbGFuZHMgKE1hbHZpbmFzKSIsImRpYWxfY29kZSI6Iis1MDAiLCJjb2RlIjoiRksifSx7Im5hbWUiOiJGYXJvZSBJc2xhbmRzIiwiZGlhbF9jb2RlIjoiKzI5OCIsImNvZGUiOiJGTyJ9LHsibmFtZSI6IkZpamkiLCJkaWFsX2NvZGUiOiIrNjc5IiwiY29kZSI6IkZKIn0seyJuYW1lIjoiRmlubGFuZCIsImRpYWxfY29kZSI6IiszNTgiLCJjb2RlIjoiRkkifSx7Im5hbWUiOiJGcmFuY2UiLCJkaWFsX2NvZGUiOiIrMzMiLCJjb2RlIjoiRlIifSx7Im5hbWUiOiJGcmVuY2ggR3VpYW5hIiwiZGlhbF9jb2RlIjoiKzU5NCIsImNvZGUiOiJHRiJ9LHsibmFtZSI6IkZyZW5jaCBQb2x5bmVzaWEiLCJkaWFsX2NvZGUiOiIrNjg5IiwiY29kZSI6IlBGIn0seyJuYW1lIjoiR2Fib24iLCJkaWFsX2NvZGUiOiIrMjQxIiwiY29kZSI6IkdBIn0seyJuYW1lIjoiR2FtYmlhIiwiZGlhbF9jb2RlIjoiKzIyMCIsImNvZGUiOiJHTSJ9LHsibmFtZSI6Ikdlb3JnaWEiLCJkaWFsX2NvZGUiOiIrOTk1IiwiY29kZSI6IkdFIn0seyJuYW1lIjoiR2VybWFueSIsImRpYWxfY29kZSI6Iis0OSIsImNvZGUiOiJERSJ9LHsibmFtZSI6IkdoYW5hIiwiZGlhbF9jb2RlIjoiKzIzMyIsImNvZGUiOiJHSCJ9LHsibmFtZSI6IkdpYnJhbHRhciIsImRpYWxfY29kZSI6IiszNTAiLCJjb2RlIjoiR0kifSx7Im5hbWUiOiJHcmVlY2UiLCJkaWFsX2NvZGUiOiIrMzAiLCJjb2RlIjoiR1IifSx7Im5hbWUiOiJHcmVlbmxhbmQiLCJkaWFsX2NvZGUiOiIrMjk5IiwiY29kZSI6IkdMIn0seyJuYW1lIjoiR3JlbmFkYSIsImRpYWxfY29kZSI6IisxIDQ3MyIsImNvZGUiOiJHRCJ9LHsibmFtZSI6Ikd1YWRlbG91cGUiLCJkaWFsX2NvZGUiOiIrNTkwIiwiY29kZSI6IkdQIn0seyJuYW1lIjoiR3VhbSIsImRpYWxfY29kZSI6IisxIDY3MSIsImNvZGUiOiJHVSJ9LHsibmFtZSI6Ikd1YXRlbWFsYSIsImRpYWxfY29kZSI6Iis1MDIiLCJjb2RlIjoiR1QifSx7Im5hbWUiOiJHdWVybnNleSIsImRpYWxfY29kZSI6Iis0NCIsImNvZGUiOiJHRyJ9LHsibmFtZSI6Ikd1aW5lYSIsImRpYWxfY29kZSI6IisyMjQiLCJjb2RlIjoiR04ifSx7Im5hbWUiOiJHdWluZWEtQmlzc2F1IiwiZGlhbF9jb2RlIjoiKzI0NSIsImNvZGUiOiJHVyJ9LHsibmFtZSI6Ikd1eWFuYSIsImRpYWxfY29kZSI6Iis1OTUiLCJjb2RlIjoiR1kifSx7Im5hbWUiOiJIYWl0aSIsImRpYWxfY29kZSI6Iis1MDkiLCJjb2RlIjoiSFQifSx7Im5hbWUiOiJIb2x5IFNlZSAoVmF0aWNhbiBDaXR5IFN0YXRlKSIsImRpYWxfY29kZSI6IiszNzkiLCJjb2RlIjoiVkEifSx7Im5hbWUiOiJIb25kdXJhcyIsImRpYWxfY29kZSI6Iis1MDQiLCJjb2RlIjoiSE4ifSx7Im5hbWUiOiJIb25nIEtvbmciLCJkaWFsX2NvZGUiOiIrODUyIiwiY29kZSI6IkhLIn0seyJuYW1lIjoiSHVuZ2FyeSIsImRpYWxfY29kZSI6IiszNiIsImNvZGUiOiJIVSJ9LHsibmFtZSI6IkljZWxhbmQiLCJkaWFsX2NvZGUiOiIrMzU0IiwiY29kZSI6IklTIn0seyJuYW1lIjoiSW5kaWEiLCJkaWFsX2NvZGUiOiIrOTEiLCJjb2RlIjoiSU4ifSx7Im5hbWUiOiJJbmRvbmVzaWEiLCJkaWFsX2NvZGUiOiIrNjIiLCJjb2RlIjoiSUQifSx7Im5hbWUiOiJJcmFuLCBJc2xhbWljIFJlcHVibGljIG9mIiwiZGlhbF9jb2RlIjoiKzk4IiwiY29kZSI6IklSIn0seyJuYW1lIjoiSXJhcSIsImRpYWxfY29kZSI6Iis5NjQiLCJjb2RlIjoiSVEifSx7Im5hbWUiOiJJcmVsYW5kIiwiZGlhbF9jb2RlIjoiKzM1MyIsImNvZGUiOiJJRSJ9LHsibmFtZSI6IklzbGUgb2YgTWFuIiwiZGlhbF9jb2RlIjoiKzQ0IiwiY29kZSI6IklNIn0seyJuYW1lIjoiSXNyYWVsIiwiZGlhbF9jb2RlIjoiKzk3MiIsImNvZGUiOiJJTCJ9LHsibmFtZSI6Ikl0YWx5IiwiZGlhbF9jb2RlIjoiKzM5IiwiY29kZSI6IklUIn0seyJuYW1lIjoiSmFtYWljYSIsImRpYWxfY29kZSI6IisxIDg3NiIsImNvZGUiOiJKTSJ9LHsibmFtZSI6IkphcGFuIiwiZGlhbF9jb2RlIjoiKzgxIiwiY29kZSI6IkpQIn0seyJuYW1lIjoiSmVyc2V5IiwiZGlhbF9jb2RlIjoiKzQ0IiwiY29kZSI6IkpFIn0seyJuYW1lIjoiSm9yZGFuIiwiZGlhbF9jb2RlIjoiKzk2MiIsImNvZGUiOiJKTyJ9LHsibmFtZSI6IkthemFraHN0YW4iLCJkaWFsX2NvZGUiOiIrNyA3IiwiY29kZSI6IktaIn0seyJuYW1lIjoiS2VueWEiLCJkaWFsX2NvZGUiOiIrMjU0IiwiY29kZSI6IktFIn0seyJuYW1lIjoiS2lyaWJhdGkiLCJkaWFsX2NvZGUiOiIrNjg2IiwiY29kZSI6IktJIn0seyJuYW1lIjoiS29yZWEsIERlbW9jcmF0aWMgUGVvcGxlJ3MgUmVwdWJsaWMgb2YiLCJkaWFsX2NvZGUiOiIrODUwIiwiY29kZSI6IktQIn0seyJuYW1lIjoiS29yZWEsIFJlcHVibGljIG9mIiwiZGlhbF9jb2RlIjoiKzgyIiwiY29kZSI6IktSIn0seyJuYW1lIjoiS3V3YWl0IiwiZGlhbF9jb2RlIjoiKzk2NSIsImNvZGUiOiJLVyJ9LHsibmFtZSI6Ikt5cmd5enN0YW4iLCJkaWFsX2NvZGUiOiIrOTk2IiwiY29kZSI6IktHIn0seyJuYW1lIjoiTGFvIFBlb3BsZSdzIERlbW9jcmF0aWMgUmVwdWJsaWMiLCJkaWFsX2NvZGUiOiIrODU2IiwiY29kZSI6IkxBIn0seyJuYW1lIjoiTGF0dmlhIiwiZGlhbF9jb2RlIjoiKzM3MSIsImNvZGUiOiJMViJ9LHsibmFtZSI6IkxlYmFub24iLCJkaWFsX2NvZGUiOiIrOTYxIiwiY29kZSI6IkxCIn0seyJuYW1lIjoiTGVzb3RobyIsImRpYWxfY29kZSI6IisyNjYiLCJjb2RlIjoiTFMifSx7Im5hbWUiOiJMaWJlcmlhIiwiZGlhbF9jb2RlIjoiKzIzMSIsImNvZGUiOiJMUiJ9LHsibmFtZSI6IkxpYnlhbiBBcmFiIEphbWFoaXJpeWEiLCJkaWFsX2NvZGUiOiIrMjE4IiwiY29kZSI6IkxZIn0seyJuYW1lIjoiTGllY2h0ZW5zdGVpbiIsImRpYWxfY29kZSI6Iis0MjMiLCJjb2RlIjoiTEkifSx7Im5hbWUiOiJMaXRodWFuaWEiLCJkaWFsX2NvZGUiOiIrMzcwIiwiY29kZSI6IkxUIn0seyJuYW1lIjoiTHV4ZW1ib3VyZyIsImRpYWxfY29kZSI6IiszNTIiLCJjb2RlIjoiTFUifSx7Im5hbWUiOiJNYWNhbyIsImRpYWxfY29kZSI6Iis4NTMiLCJjb2RlIjoiTU8ifSx7Im5hbWUiOiJNYWNlZG9uaWEsIFRoZSBGb3JtZXIgWXVnb3NsYXYgUmVwdWJsaWMgb2YiLCJkaWFsX2NvZGUiOiIrMzg5IiwiY29kZSI6Ik1LIn0seyJuYW1lIjoiTWFkYWdhc2NhciIsImRpYWxfY29kZSI6IisyNjEiLCJjb2RlIjoiTUcifSx7Im5hbWUiOiJNYWxhd2kiLCJkaWFsX2NvZGUiOiIrMjY1IiwiY29kZSI6Ik1XIn0seyJuYW1lIjoiTWFsYXlzaWEiLCJkaWFsX2NvZGUiOiIrNjAiLCJjb2RlIjoiTVkifSx7Im5hbWUiOiJNYWxkaXZlcyIsImRpYWxfY29kZSI6Iis5NjAiLCJjb2RlIjoiTVYifSx7Im5hbWUiOiJNYWxpIiwiZGlhbF9jb2RlIjoiKzIyMyIsImNvZGUiOiJNTCJ9LHsibmFtZSI6Ik1hbHRhIiwiZGlhbF9jb2RlIjoiKzM1NiIsImNvZGUiOiJNVCJ9LHsibmFtZSI6Ik1hcnNoYWxsIElzbGFuZHMiLCJkaWFsX2NvZGUiOiIrNjkyIiwiY29kZSI6Ik1IIn0seyJuYW1lIjoiTWFydGluaXF1ZSIsImRpYWxfY29kZSI6Iis1OTYiLCJjb2RlIjoiTVEifSx7Im5hbWUiOiJNYXVyaXRhbmlhIiwiZGlhbF9jb2RlIjoiKzIyMiIsImNvZGUiOiJNUiJ9LHsibmFtZSI6Ik1hdXJpdGl1cyIsImRpYWxfY29kZSI6IisyMzAiLCJjb2RlIjoiTVUifSx7Im5hbWUiOiJNYXlvdHRlIiwiZGlhbF9jb2RlIjoiKzI2MiIsImNvZGUiOiJZVCJ9LHsibmFtZSI6Ik1leGljbyIsImRpYWxfY29kZSI6Iis1MiIsImNvZGUiOiJNWCJ9LHsibmFtZSI6Ik1pY3JvbmVzaWEsIEZlZGVyYXRlZCBTdGF0ZXMgb2YiLCJkaWFsX2NvZGUiOiIrNjkxIiwiY29kZSI6IkZNIn0seyJuYW1lIjoiTW9sZG92YSwgUmVwdWJsaWMgb2YiLCJkaWFsX2NvZGUiOiIrMzczIiwiY29kZSI6Ik1EIn0seyJuYW1lIjoiTW9uYWNvIiwiZGlhbF9jb2RlIjoiKzM3NyIsImNvZGUiOiJNQyJ9LHsibmFtZSI6Ik1vbmdvbGlhIiwiZGlhbF9jb2RlIjoiKzk3NiIsImNvZGUiOiJNTiJ9LHsibmFtZSI6Ik1vbnRlbmVncm8iLCJkaWFsX2NvZGUiOiIrMzgyIiwiY29kZSI6Ik1FIn0seyJuYW1lIjoiTW9udHNlcnJhdCIsImRpYWxfY29kZSI6IisxNjY0IiwiY29kZSI6Ik1TIn0seyJuYW1lIjoiTW9yb2NjbyIsImRpYWxfY29kZSI6IisyMTIiLCJjb2RlIjoiTUEifSx7Im5hbWUiOiJNb3phbWJpcXVlIiwiZGlhbF9jb2RlIjoiKzI1OCIsImNvZGUiOiJNWiJ9LHsibmFtZSI6Ik15YW5tYXIiLCJkaWFsX2NvZGUiOiIrOTUiLCJjb2RlIjoiTU0ifSx7Im5hbWUiOiJOYW1pYmlhIiwiZGlhbF9jb2RlIjoiKzI2NCIsImNvZGUiOiJOQSJ9LHsibmFtZSI6Ik5hdXJ1IiwiZGlhbF9jb2RlIjoiKzY3NCIsImNvZGUiOiJOUiJ9LHsibmFtZSI6Ik5lcGFsIiwiZGlhbF9jb2RlIjoiKzk3NyIsImNvZGUiOiJOUCJ9LHsibmFtZSI6Ik5ldGhlcmxhbmRzIiwiZGlhbF9jb2RlIjoiKzMxIiwiY29kZSI6Ik5MIn0seyJuYW1lIjoiTmV0aGVybGFuZHMgQW50aWxsZXMiLCJkaWFsX2NvZGUiOiIrNTk5IiwiY29kZSI6IkFOIn0seyJuYW1lIjoiTmV3IENhbGVkb25pYSIsImRpYWxfY29kZSI6Iis2ODciLCJjb2RlIjoiTkMifSx7Im5hbWUiOiJOZXcgWmVhbGFuZCIsImRpYWxfY29kZSI6Iis2NCIsImNvZGUiOiJOWiJ9LHsibmFtZSI6Ik5pY2FyYWd1YSIsImRpYWxfY29kZSI6Iis1MDUiLCJjb2RlIjoiTkkifSx7Im5hbWUiOiJOaWdlciIsImRpYWxfY29kZSI6IisyMjciLCJjb2RlIjoiTkUifSx7Im5hbWUiOiJOaWdlcmlhIiwiZGlhbF9jb2RlIjoiKzIzNCIsImNvZGUiOiJORyJ9LHsibmFtZSI6Ik5pdWUiLCJkaWFsX2NvZGUiOiIrNjgzIiwiY29kZSI6Ik5VIn0seyJuYW1lIjoiTm9yZm9sayBJc2xhbmQiLCJkaWFsX2NvZGUiOiIrNjcyIiwiY29kZSI6Ik5GIn0seyJuYW1lIjoiTm9ydGhlcm4gTWFyaWFuYSBJc2xhbmRzIiwiZGlhbF9jb2RlIjoiKzEgNjcwIiwiY29kZSI6Ik1QIn0seyJuYW1lIjoiTm9yd2F5IiwiZGlhbF9jb2RlIjoiKzQ3IiwiY29kZSI6Ik5PIn0seyJuYW1lIjoiT21hbiIsImRpYWxfY29kZSI6Iis5NjgiLCJjb2RlIjoiT00ifSx7Im5hbWUiOiJQYWtpc3RhbiIsImRpYWxfY29kZSI6Iis5MiIsImNvZGUiOiJQSyJ9LHsibmFtZSI6IlBhbGF1IiwiZGlhbF9jb2RlIjoiKzY4MCIsImNvZGUiOiJQVyJ9LHsibmFtZSI6IlBhbGVzdGluaWFuIFRlcnJpdG9yeSwgT2NjdXBpZWQiLCJkaWFsX2NvZGUiOiIrOTcwIiwiY29kZSI6IlBTIn0seyJuYW1lIjoiUGFuYW1hIiwiZGlhbF9jb2RlIjoiKzUwNyIsImNvZGUiOiJQQSJ9LHsibmFtZSI6IlBhcHVhIE5ldyBHdWluZWEiLCJkaWFsX2NvZGUiOiIrNjc1IiwiY29kZSI6IlBHIn0seyJuYW1lIjoiUGFyYWd1YXkiLCJkaWFsX2NvZGUiOiIrNTk1IiwiY29kZSI6IlBZIn0seyJuYW1lIjoiUGVydSIsImRpYWxfY29kZSI6Iis1MSIsImNvZGUiOiJQRSJ9LHsibmFtZSI6IlBoaWxpcHBpbmVzIiwiZGlhbF9jb2RlIjoiKzYzIiwiY29kZSI6IlBIIn0seyJuYW1lIjoiUGl0Y2Fpcm4iLCJkaWFsX2NvZGUiOiIrODcyIiwiY29kZSI6IlBOIn0seyJuYW1lIjoiUG9sYW5kIiwiZGlhbF9jb2RlIjoiKzQ4IiwiY29kZSI6IlBMIn0seyJuYW1lIjoiUG9ydHVnYWwiLCJkaWFsX2NvZGUiOiIrMzUxIiwiY29kZSI6IlBUIn0seyJuYW1lIjoiUHVlcnRvIFJpY28iLCJkaWFsX2NvZGUiOiIrMSA5MzkiLCJjb2RlIjoiUFIifSx7Im5hbWUiOiJRYXRhciIsImRpYWxfY29kZSI6Iis5NzQiLCJjb2RlIjoiUUEifSx7Im5hbWUiOiJSb21hbmlhIiwiZGlhbF9jb2RlIjoiKzQwIiwiY29kZSI6IlJPIn0seyJuYW1lIjoiUnVzc2lhIiwiZGlhbF9jb2RlIjoiKzciLCJjb2RlIjoiUlUifSx7Im5hbWUiOiJSd2FuZGEiLCJkaWFsX2NvZGUiOiIrMjUwIiwiY29kZSI6IlJXIn0seyJuYW1lIjoiUsOpdW5pb24iLCJkaWFsX2NvZGUiOiIrMjYyIiwiY29kZSI6IlJFIn0seyJuYW1lIjoiU2FpbnQgQmFydGjDqWxlbXkiLCJkaWFsX2NvZGUiOiIrNTkwIiwiY29kZSI6IkJMIn0seyJuYW1lIjoiU2FpbnQgSGVsZW5hLCBBc2NlbnNpb24gYW5kIFRyaXN0YW4gRGEgQ3VuaGEiLCJkaWFsX2NvZGUiOiIrMjkwIiwiY29kZSI6IlNIIn0seyJuYW1lIjoiU2FpbnQgS2l0dHMgYW5kIE5ldmlzIiwiZGlhbF9jb2RlIjoiKzEgODY5IiwiY29kZSI6IktOIn0seyJuYW1lIjoiU2FpbnQgTHVjaWEiLCJkaWFsX2NvZGUiOiIrMSA3NTgiLCJjb2RlIjoiTEMifSx7Im5hbWUiOiJTYWludCBNYXJ0aW4iLCJkaWFsX2NvZGUiOiIrNTkwIiwiY29kZSI6Ik1GIn0seyJuYW1lIjoiU2FpbnQgUGllcnJlIGFuZCBNaXF1ZWxvbiIsImRpYWxfY29kZSI6Iis1MDgiLCJjb2RlIjoiUE0ifSx7Im5hbWUiOiJTYWludCBWaW5jZW50IGFuZCB0aGUgR3JlbmFkaW5lcyIsImRpYWxfY29kZSI6IisxIDc4NCIsImNvZGUiOiJWQyJ9LHsibmFtZSI6IlNhbW9hIiwiZGlhbF9jb2RlIjoiKzY4NSIsImNvZGUiOiJXUyJ9LHsibmFtZSI6IlNhbiBNYXJpbm8iLCJkaWFsX2NvZGUiOiIrMzc4IiwiY29kZSI6IlNNIn0seyJuYW1lIjoiU2FvIFRvbWUgYW5kIFByaW5jaXBlIiwiZGlhbF9jb2RlIjoiKzIzOSIsImNvZGUiOiJTVCJ9LHsibmFtZSI6IlNhdWRpIEFyYWJpYSIsImRpYWxfY29kZSI6Iis5NjYiLCJjb2RlIjoiU0EifSx7Im5hbWUiOiJTZW5lZ2FsIiwiZGlhbF9jb2RlIjoiKzIyMSIsImNvZGUiOiJTTiJ9LHsibmFtZSI6IlNlcmJpYSIsImRpYWxfY29kZSI6IiszODEiLCJjb2RlIjoiUlMifSx7Im5hbWUiOiJTZXljaGVsbGVzIiwiZGlhbF9jb2RlIjoiKzI0OCIsImNvZGUiOiJTQyJ9LHsibmFtZSI6IlNpZXJyYSBMZW9uZSIsImRpYWxfY29kZSI6IisyMzIiLCJjb2RlIjoiU0wifSx7Im5hbWUiOiJTaW5nYXBvcmUiLCJkaWFsX2NvZGUiOiIrNjUiLCJjb2RlIjoiU0cifSx7Im5hbWUiOiJTbG92YWtpYSIsImRpYWxfY29kZSI6Iis0MjEiLCJjb2RlIjoiU0sifSx7Im5hbWUiOiJTbG92ZW5pYSIsImRpYWxfY29kZSI6IiszODYiLCJjb2RlIjoiU0kifSx7Im5hbWUiOiJTb2xvbW9uIElzbGFuZHMiLCJkaWFsX2NvZGUiOiIrNjc3IiwiY29kZSI6IlNCIn0seyJuYW1lIjoiU29tYWxpYSIsImRpYWxfY29kZSI6IisyNTIiLCJjb2RlIjoiU08ifSx7Im5hbWUiOiJTb3V0aCBBZnJpY2EiLCJkaWFsX2NvZGUiOiIrMjciLCJjb2RlIjoiWkEifSx7Im5hbWUiOiJTb3V0aCBHZW9yZ2lhIGFuZCB0aGUgU291dGggU2FuZHdpY2ggSXNsYW5kcyIsImRpYWxfY29kZSI6Iis1MDAiLCJjb2RlIjoiR1MifSx7Im5hbWUiOiJTcGFpbiIsImRpYWxfY29kZSI6IiszNCIsImNvZGUiOiJFUyJ9LHsibmFtZSI6IlNyaSBMYW5rYSIsImRpYWxfY29kZSI6Iis5NCIsImNvZGUiOiJMSyJ9LHsibmFtZSI6IlN1ZGFuIiwiZGlhbF9jb2RlIjoiKzI0OSIsImNvZGUiOiJTRCJ9LHsibmFtZSI6IlN1cmluYW1lIiwiZGlhbF9jb2RlIjoiKzU5NyIsImNvZGUiOiJTUiJ9LHsibmFtZSI6IlN2YWxiYXJkIGFuZCBKYW4gTWF5ZW4iLCJkaWFsX2NvZGUiOiIrNDciLCJjb2RlIjoiU0oifSx7Im5hbWUiOiJTd2F6aWxhbmQiLCJkaWFsX2NvZGUiOiIrMjY4IiwiY29kZSI6IlNaIn0seyJuYW1lIjoiU3dlZGVuIiwiZGlhbF9jb2RlIjoiKzQ2IiwiY29kZSI6IlNFIn0seyJuYW1lIjoiU3dpdHplcmxhbmQiLCJkaWFsX2NvZGUiOiIrNDEiLCJjb2RlIjoiQ0gifSx7Im5hbWUiOiJTeXJpYW4gQXJhYiBSZXB1YmxpYyIsImRpYWxfY29kZSI6Iis5NjMiLCJjb2RlIjoiU1kifSx7Im5hbWUiOiJUYWl3YW4iLCJkaWFsX2NvZGUiOiIrODg2IiwiY29kZSI6IlRXIn0seyJuYW1lIjoiVGFqaWtpc3RhbiIsImRpYWxfY29kZSI6Iis5OTIiLCJjb2RlIjoiVEoifSx7Im5hbWUiOiJUYW56YW5pYSwgVW5pdGVkIFJlcHVibGljIG9mIiwiZGlhbF9jb2RlIjoiKzI1NSIsImNvZGUiOiJUWiJ9LHsibmFtZSI6IlRoYWlsYW5kIiwiZGlhbF9jb2RlIjoiKzY2IiwiY29kZSI6IlRIIn0seyJuYW1lIjoiVGltb3ItTGVzdGUiLCJkaWFsX2NvZGUiOiIrNjcwIiwiY29kZSI6IlRMIn0seyJuYW1lIjoiVG9nbyIsImRpYWxfY29kZSI6IisyMjgiLCJjb2RlIjoiVEcifSx7Im5hbWUiOiJUb2tlbGF1IiwiZGlhbF9jb2RlIjoiKzY5MCIsImNvZGUiOiJUSyJ9LHsibmFtZSI6IlRvbmdhIiwiZGlhbF9jb2RlIjoiKzY3NiIsImNvZGUiOiJUTyJ9LHsibmFtZSI6IlRyaW5pZGFkIGFuZCBUb2JhZ28iLCJkaWFsX2NvZGUiOiIrMSA4NjgiLCJjb2RlIjoiVFQifSx7Im5hbWUiOiJUdW5pc2lhIiwiZGlhbF9jb2RlIjoiKzIxNiIsImNvZGUiOiJUTiJ9LHsibmFtZSI6IlR1cmtleSIsImRpYWxfY29kZSI6Iis5MCIsImNvZGUiOiJUUiJ9LHsibmFtZSI6IlR1cmttZW5pc3RhbiIsImRpYWxfY29kZSI6Iis5OTMiLCJjb2RlIjoiVE0ifSx7Im5hbWUiOiJUdXJrcyBhbmQgQ2FpY29zIElzbGFuZHMiLCJkaWFsX2NvZGUiOiIrMSA2NDkiLCJjb2RlIjoiVEMifSx7Im5hbWUiOiJUdXZhbHUiLCJkaWFsX2NvZGUiOiIrNjg4IiwiY29kZSI6IlRWIn0seyJuYW1lIjoiVWdhbmRhIiwiZGlhbF9jb2RlIjoiKzI1NiIsImNvZGUiOiJVRyJ9LHsibmFtZSI6IlVrcmFpbmUiLCJkaWFsX2NvZGUiOiIrMzgwIiwiY29kZSI6IlVBIn0seyJuYW1lIjoiVW5pdGVkIEFyYWIgRW1pcmF0ZXMiLCJkaWFsX2NvZGUiOiIrOTcxIiwiY29kZSI6IkFFIn0seyJuYW1lIjoiVW5pdGVkIEtpbmdkb20iLCJkaWFsX2NvZGUiOiIrNDQiLCJjb2RlIjoiR0IifSx7Im5hbWUiOiJVbml0ZWQgU3RhdGVzIiwiZGlhbF9jb2RlIjoiKzEiLCJjb2RlIjoiVVMifSx7Im5hbWUiOiJVcnVndWF5IiwiZGlhbF9jb2RlIjoiKzU5OCIsImNvZGUiOiJVWSJ9LHsibmFtZSI6IlV6YmVraXN0YW4iLCJkaWFsX2NvZGUiOiIrOTk4IiwiY29kZSI6IlVaIn0seyJuYW1lIjoiVmFudWF0dSIsImRpYWxfY29kZSI6Iis2NzgiLCJjb2RlIjoiVlUifSx7Im5hbWUiOiJWZW5lenVlbGEsIEJvbGl2YXJpYW4gUmVwdWJsaWMgb2YiLCJkaWFsX2NvZGUiOiIrNTgiLCJjb2RlIjoiVkUifSx7Im5hbWUiOiJWaWV0IE5hbSIsImRpYWxfY29kZSI6Iis4NCIsImNvZGUiOiJWTiJ9LHsibmFtZSI6IlZpcmdpbiBJc2xhbmRzLCBCcml0aXNoIiwiZGlhbF9jb2RlIjoiKzEgMjg0IiwiY29kZSI6IlZHIn0seyJuYW1lIjoiVmlyZ2luIElzbGFuZHMsIFUuUy4iLCJkaWFsX2NvZGUiOiIrMSAzNDAiLCJjb2RlIjoiVkkifSx7Im5hbWUiOiJXYWxsaXMgYW5kIEZ1dHVuYSIsImRpYWxfY29kZSI6Iis2ODEiLCJjb2RlIjoiV0YifSx7Im5hbWUiOiJZZW1lbiIsImRpYWxfY29kZSI6Iis5NjciLCJjb2RlIjoiWUUifSx7Im5hbWUiOiJaYW1iaWEiLCJkaWFsX2NvZGUiOiIrMjYwIiwiY29kZSI6IlpNIn0seyJuYW1lIjoiWmltYmFid2UiLCJkaWFsX2NvZGUiOiIrMjYzIiwiY29kZSI6IlpXIn0seyJuYW1lIjoiw4VsYW5kIElzbGFuZHMiLCJkaWFsX2NvZGUiOiIrMzU4IiwiY29kZSI6IkFYIn1d</string>
+
+    <string name="empty_mobile_number">El campo Número de móvil no se puede dejar en blanco</string>
+    <string name="name_valid">Nombre no se puede dejar en blanco</string>
+    <string name="aggree_terms">Por favor acepte los términos y condiciones para proceder.</string>
+    <string name="valid_mobile_number">Por favor, introduzca un número de móvil válido</string>
+    <string name="enter_password">El campo de contraseña no se puede dejar en blanco</string>
+    <string name="newenter_password">El nuevo campo de contraseña no se puede dejar en blanco</string>
+    <string name="confirmenter_password">El campo Confirmar contraseña no puede dejarse en blanco</string>
+    <string name="valid_password">La contraseña debe contener al menos 8 caracteres</string>
+    <string name="newvalid_password">La nueva contraseña debe contener al menos 8 caracteres</string>
+    <string name="confirmvalid_password">Confirmar contraseña debe contener al menos 8 caracteres</string>
+    <string name="otpvalid">Otp debe contener al menos 4 dígitos</string>
+    <string name="pleaseenterotp">El campo Otp no se puede dejar en blanco</string>
+    <string name="password_not_match">Las contraseñas no coinciden. Inténtalo de nuevo</string>
+    <string name="empty_email">El campo de correo electrónico no se puede dejar en blanco.</string>
+    <string name="empty_email_mobile">El campo de correo electrónico / número de teléfono móvil no se puede dejar en blanco.</string>
+    <string name="inavlid_email">Por favor introduzca una dirección de correo electrónico válida</string>
+    <string name="valid_password_lenght">La contraseña debe contener al menos 8 caracteres</string>
+    <string name="txt_paswword_dosnt_matched">La contraseña y la contraseña de confirmación deben ser iguales</string>
+    <string name="message">Mensaje</string>
+    <string name="search">Buscar</string>
+    <string name="country_code_validation">Por favor seleccione el código de país</string>
+    <string name="choose_options">ELEGIR \ OPCIONES</string>
+    <string name="local_rides">Paseos locales</string>
+    <string name="road_trips">Paseos ofrecidos</string>
+    <string name="home">Casa</string>
+    <string name="txt_app_version">Version %s</string>
+    <string name="app_version">Version %s</string>
+    <string name="txt_availablity">Disponibilidad</string>
+    <string name="menu_home">Casa</string>
+    <string name="driver_profile">Perfil del conductor</string>
+    <string name="menu_addride">Añadir paseo</string>
+    <string name="menu_activeride">Paseo activo</string>
+    <string name="menu_ride_history">Historia del viaje</string>
+    <string name="menu_settings">Ajustes</string>
+    <string name="menu_ride_type">Tipo de viaje</string>
+    <string name="menu_logout">Cerrar sesión</string>
+    <string name="menu_aboutus">Sobre nosotros</string>
+    <string name="menu_referal">Remisión</string>
+    <string name="menu_promotions">Promociones</string>
+    <string name="title_exit">Confirmar</string>
+    <string name="msg_exit">¿Quieres salir de FreeRoading Driver?</string>
+    <string name="txt_yes">SÍ</string>
+    <string name="txt_no">NO</string>
+    <string name="openDrawer">Cajón abierto</string>
+    <string name="closeDrawer">Cajón de cierre</string>
+    <string name="pickup_location">lugar de recogida</string>
+    <string name="dropoff_location">Punto de entrega</string>
+    <string name="book_now">Reservar ahora</string>
+    <string name="driver_details">Detalles del conductor</string>
+    <string name="car_details">Detalles del coche</string>
+    <string name="mobile">Móvil</string>
+    <string name="save">Salvar</string>
+    <string name="address">Dirección</string>
+    <string name="driver_license_no">Número de licencia de conducir</string>
+    <string name="driver_license_exp_date">Licencia de conducir Fecha de Exp.</string>
+    <string name="sound">Sonar</string>
+    <string name="profile_settings">Configuración de perfil</string>
+    <string name="reset_password">Restablecer la contraseña</string>
+    <string name="help">Ayuda</string>
+    <string name="support">Apoyo</string>
+    <string name="tnc"><![CDATA[Términos y condiciones]]></string>
+    <string name="privacy_policy">Política de privacidad</string>
+    <string name="settings">Ajustes</string>
+    <string name="old_pass">Contraseña anterior</string>
+    <string name="reset_pass">Restablecer la contraseña</string>
+    <string name="contact_us">Contáctenos</string>
+    <string name="client_not_shown">Cliente no mostrado</string>
+    <string name="client_requested_to_cancel">Cliente solicitó cancelar</string>
+    <string name="wrong_address_shown">Se muestra la dirección incorrecta</string>
+    <string name="other_reason">Otra razon</string>
+    <string name="do_not">No cancelar viaje</string>
+    <string name="cancel_can_longer_do_the_ride">Cancel-Can longer do the ride</string>
+    <string name="cancel_with_cancellation_fee_customer_is_not_here_7_minutes_after_arrival">Cancelar con cargo por cancelación: el cliente no está aquí 7 minutos después de su llegada</string>
+    <string name="from">Desde</string>
+    <string name="to">A</string>
+    <string name="booking_id">ID de reserva:</string>
+    <string name="drop_location">Colocar Ubicación</string>
+    <string name="total_fare">Tarifa total</string>
+    <string name="distance">Distancia</string>
+    <string name="time">Hora</string>
+    <string name="car_make">MARCA DE AUTO</string>
+    <string name="company">EMPRESA</string>
+    <string name="car_type">TIPO DE CARRO</string>
+    <string name="seating_capacity">NÚMERO DE PLAZAS</string>
+    <string name="expiry_date">FECHA DE CADUCIDAD</string>
+    <string name="licence_plate">PLACA DE MATRÍCULA</string>
+    <string name="car_registration_no">SEGURO</string>
+    <string name="car_manufacture_year">FECHA DE CADUCIDAD</string>
+    <string name="total_earnings">GANANCIAS TOTALES</string>
+    <string name="month_s_earnings">GANANCIAS DEL MES</string>
+    <string name="week_s_earning">SEMANA DE GANAR</string>
+    <string name="today_s_earning">LA GANANCIA DE HOY</string>
+    <string name="last_fare">ÚLTIMA TARIFA</string>
+    <string name="total_booking">RESERVA TOTAL</string>
+    <string name="statistics">Estadística</string>
+    <string name="price">Precio</string>
+    <string name="service_charge">Cargo por servicio</string>
+    <string name="total">Total</string>
+
+
+    <string name="start_date_validation">Por favor, elija una fecha de inicio</string>
+    <string name="end_date_validation">Por favor, elija una fecha de finalización</string>
+    <string name="ride_details">Detalle de la historia del viaje</string>
+    <string name="api_map_key">AIzaSyA2cOn3RIvxtI_KclGBHdH7KrAR3oCM41I</string>
+    <string name="estimated_time">Hora prevista</string>
+    <string name="reject">Rechazar</string>
+    <string name="accept">ACEPTAR</string>
+    <string name="call">LLAMADA</string>
+
+    <string name="header_ride_request">Solicitud de viaje</string>
+    <string name="header_driver_on_way">En camino</string>
+    <string name="header_begin_journey">Comenzar el viaje</string>
+    <string name="header_edit_journey">Editar viaje</string>
+    <string name="header_dropped_journey">Pasajero caído</string>
+    <string name="header_invoice">Factura</string>
+    <string name="estimed_time">Tiempo estimado \ n% s</string>
+    <string name="msg_drop_journey">¿Quieres dejar este viaje?</string>
+    <string name="edit_journey">EDITAR VIAJE</string>
+    <string name="begin_journey">Comenzar el viaje</string>
+    <string name="passenger_dropped">Pasajero caído</string>
+    <string name="new_dropoff_location">Nueva ubicación de devolución</string>
+    <string name="duration">Duración</string>
+    <string name="finish">Terminar</string>
+    <string name="edit_profile">Editar perfil</string>
+    <string name="what_type_of_vehicle_do_you_have">¿Qué tipo de vehículo tienes?</string>
+    <string name="car_make_small">Marca de auto</string>
+    <string name="vehicle_year">Año del vehículo</string>
+    <string name="color_of_the_vehicle">Color del vehículo</string>
+    <string name="how_many_doors">Cuantas puertas</string>
+    <string name="departure_date">Fecha de salida</string>
+    <string name="how_much_to_give_this_ride">Precio por asiento?</string>
+    <string name="how_many_riders_can_you_take">¿Cuántos jinetes puedes llevar?</string>
+    <string name="stroller">Paseante:</string>
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+    <string name="car_seat">Asiento de coche</string>
+    <string name="how_many">¿Cuántos?</string>
+    <string name="bike">Bicicleta:</string>
+    <string name="snowboard_or_skis">Snowboard or skis:</string>
+    <string name="surf_board">Tabla de surf:</string>
+    <string name="pets">Mascotas:</string>
+    <string name="change_destination">Cambiar destino</string>
+    <string name="waiting_time">Tiempo de espera</string>
+    <string name="request_stop">PARADA DISCRECIONAL</string>
+    <string name="new_dropoff_locations">Nueva ubicación de devolución</string>
+    <string name="old_pass_empty">El campo de contraseña anterior no se puede dejar en blanco</string>
+    <string name="new_password_empty">El nuevo campo de contraseña no se puede dejar en blanco</string>
+    <string name="confirm_pass_empty">El campo Confirmar nueva contraseña no se puede dejar en blanco</string>
+    <string name="password_length">La contraseña debe contener al menos 8 caracteres</string>
+    <string name="passswords_dontmatch">Las contraseñas no coinciden. Inténtalo de nuevo</string>
+    <string name="login_cap">INICIAR SESIÓN</string>
+    <string name="logout_confirmation">Confirmación de cierre de sesión</string>
+    <string name="confirm">Confirmar</string>
+    <string name="rate_the_customer">Califica al cliente</string>
+    <string name="how_was_the_customer">¿Cómo fue el cliente?</string>
+    <string name="write_review">Escribir un comentario</string>
+    <string name="stripe_connect">Conexión de la raya</string>
+    <string name="stripe_message_txt">In order to receive payment \n<font size="16"><b>Connect with Stripe </b></font></string>
+    <string name="cancelled_ride">Este viaje ha sido cancelado por el conductor.</string>
+    <string name="cancelled_ride_passenger">Este viaje ha sido cancelado por el pasajero..</string>
+
+    <string name="pickup_validation">Por favor, elija un lugar de recogida</string>
+    <string name="dropoff_validation">Por favor, elija un punto de entrega</string>
+    <string name="vehicle_type_validation">El campo tipo de vehículo no se puede dejar en blanco</string>
+    <string name="car_make_validation">El campo de la marca del coche no se puede dejar en blanco.</string>
+    <string name="vehicle_year_validation">El campo del año del vehículo no se puede dejar en blanco..</string>
+    <string name="color_field_validation">El color del campo del vehículo no se puede dejar en blanco.</string>
+    <string name="doors_validation">Por favor elige cuantas puertas?</string>
+    <string name="date_validation">El campo de fecha no se puede dejar en blanco.</string>
+    <string name="cost_validation">¿Cuánto costará este paseo?</string>
+    <string name="riders_validation">¿Cuántos jinetes puedes llevar?</string>
+
+    <string name="strollers_count_validation">Por favor ingrese cuantos cochecitos tiene?</string>
+    <string name="car_seat_validation">¿Cuántos asientos hay disponibles?</string>
+    <string name="bike_count_validation">¿Cuántas bicicletas tienes?</string>
+    <string name="snowboard_count_validation">¿Cuánta snowboard tienes?</string>
+    <string name="surfbaord_count_validation">¿Cuántas tablas de surf tienes?</string>
+    <string name="pets_count_validation">¿Cuantas mascotas tienes?</string>
+    <string name="departure_time">Hora de salida</string>
+
+    <string name="journey_started">Viaje iniciado</string>
+    <string name="name">Nombre</string>
+    <string name="active_ride_detail">Detalle de viaje activo</string>
+    <string name="cancel_ride">Cancelar viaje</string>
+    <string name="arrived">Llegado</string>
+    <string name="pick_up">Recoger</string>
+    <string name="drop">soltar</string>
+    <string name="are_you_sure">¿Seguro que quieres cancelar este viaje?</string>
+    <string name="finish_journey">Terminar el viaje</string>
+    <string name="done">Hecho</string>
+    <string name="invoice">Invoice</string>
+    <string name="rate_the_passenger">Califica al pasajero</string>
+    <string name="how_was_the_passenger">¿Cómo fue el pasajero?</string>
+    <string name="departing_from">Lugar de recogida</string>
+    <string name="going_to">Punto de entrega</string>
+    <string name="ride_completed">Este paseo ha sido completado..</string>
+    <string name="map_key">AIzaSyBgvimz2qIsDfGzu7OCNr2eLEQAl-fpYME</string>
+    <string name="tip_label">Propina</string>
+    <string name="licenceplateno">Número de placa del vehículo</string>
+    <string name="wating_charge">Cargo de espera</string>
+    <string name="wating_time">Tiempo de espera</string>
+    <string name="how_many_in_your_party">¿Cuántos en tu fiesta?</string>
+    <string name="number_of_bags">número de bolsa</string>
+    <string name="taxi_plate_num">Número de placa del vehículo</string>
+    <string name="price_per_rider">Precio por viaje</string>
+    <string name="total_rider">Total Riders</string>
+    <string name="book_rider">Jinetes reservados</string>
+    <string name="language_slection">Por favor seleccione idioma</string>
+    <string name="date">Fecha</string>
+    <string name="per_rider">/Por jinete</string>
+
+    <string name="vehicle_type">tipo de vehiculo</string>
+    <string name="facebook_account">Cuenta de Facebook</string>
+    <string name="linked_in_acccount">Cuenta de Linkedin</string>
+    <string name="insta_account">Cuenta de Instagram</string>
+    <string name="language">Idioma</string>
+    <string name="status_update_profile">Actualización del perfil</string>
+    <string name="status_stripe_connect">Actualice sus detalles de rayas</string>
+    <string name="status_admin_aprovel">Aprobación del administrador</string>
+    <string name="status_backend_approval">Aprobación del Backend</string>
+    <string name="status_update_vehical_details">Actualizar los detalles del vehículo</string>
+    <string name="driving_exp">Año de experiencia de conducción</string>
+    <string name="hobiies">Aficiones</string>
+    <string name="interest">Intereses</string>
+    <string name="music_pref">Preferencias musicales</string>
+    <string name="smoking">De fumar</string>
+    <string name="make">Hacer</string>
+    <string name="model">Modelo</string>
+    <string name="manifc_year">Año de fabricación</string>
+    <string name="num_door">No de puertas</string>
+    <string name="num_seat">No de asiento</string>
+    <string name="ac">AC</string>
+    <string name="wifi">Wifi disponible</string>
+    <string name="type_of_vehicle">Wifi disponible</string>
+    <string name="hybrid">Híbrido</string>
+    <string name="elect">Eléctrico</string>
+    <string name="icense_plate">numero de licencia</string>
+    <string name="state">Estado</string>
+    <string name="registartion_num">Número de registro</string>
+    <string name="vehicle_color">Color del vehículo</string>
+    <string name="vehicle_front">Vehículo delantero</string>
+    <string name="vehicle_back">Parte posterior del vehículo</string>
+    <string name="licenc_held">Class of driver license(s) held</string>
+    <string name="lang_spoken">Idiomas hablados</string>
+    <string name="petfriendly">Mascota amigable</string>
+    <string name="contact_to_admin">Por favor contacte a admin</string>
+    <string name="diesl">Diesel</string>
+    <string name="gas">Gas</string>
+    <string name="wheel_drive">Wheel Drive</string>
+    <string name="two_wheel">2 wheel</string>
+    <string name="liability_coverage_amount">Liability Coverage Amount</string>
+    <string name="comprehensive_coverage_amount">Comprehensive Coverage Amount</string>
+    <string name="personal_injury_coverage_amount">Personal Injury Coverage Amount</string>
+    <string name="underinsured_motorist_coverage_amount">Uninsured/ underinsured motorist coverage amount</string>
+    <string name="insurance_image">Auto Insurance Company (upload insurance certificate card)</string>
+    <string name="driver_lic_pic">Driver License Pic</string>
+    <string name="collision_coverage_amount">Collision Coverage Amount</string>
+    <string name="item_accomde">Items accommodated</string>
+    <string name="other">Other</string>
+    <string name="membership">Membership</string>
+    <string name="subscribe_now">Subscribe Now</string>
+
+
+    <string-array name="doorsarray">
+        <item>@string/how_many_doors</item>
+        <item> 2 Doors</item>
+        <item> 4 Doors</item>
+    </string-array>
+
+    <string-array name="classes">
+        <item>Select</item>
+        <item>Class A</item>
+        <item>Class B</item>
+        <item>Class C</item>
+        <item>Class D</item>
+    </string-array>
+
+    <string-array name="doors">
+        <item>2</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="seat">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="riders">
+        <item>@string/how_many_riders_can_you_take</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+    <string-array name="language_array">
+        <item>Language</item>
+        <item>English</item>
+        <item>French</item>
+        <item>Spanish</item>
+    </string-array>
+</resources>

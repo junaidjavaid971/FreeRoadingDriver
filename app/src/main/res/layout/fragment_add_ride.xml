@@ -1,0 +1,834 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addParentt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.apps.freeroadingdriver.fragments.AddRideFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_20sdp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                android:id="@+id/txt_pickup"
+                style="@style/regularblackTextviewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:hint="@string/departing_from"
+                android:maxLines="2" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/colorDarkGray" />
+
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                android:id="@+id/txt_dropoff"
+                style="@style/regularblackTextviewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:hint="@string/going_to"
+                android:maxLines="2" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/colorDarkGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                    style="@style/regularTextviewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/make" />
+
+                <Spinner
+                    android:id="@+id/spin_make"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                    android:id="@+id/txt_make"
+                    style="@style/regularTextviewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Audi" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                    style="@style/regularTextviewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/model" />
+
+                <Spinner
+                    android:id="@+id/spin_model"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                    android:id="@+id/txt_model"
+                    style="@style/regularTextviewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="A3" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                    style="@style/regularTextviewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/vehicle_type" />
+
+                <Spinner
+                    android:id="@+id/spin_vehicle_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                    android:id="@+id/txt_vehicle_type"
+                    style="@style/regularTextviewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="CAR" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                    style="@style/regularTextviewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/vehicle_year" />
+
+                <Spinner
+                    android:id="@+id/spin_vehicle_year"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:focusedByDefault="false"
+                    android:visibility="gone" />
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                    android:id="@+id/txt_year"
+                    style="@style/regularTextviewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="1999" />
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="gone"
+                app:theme="@style/TextLabel">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                    android:id="@+id/carMake_edittext"
+                    style="@style/editTextRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/car_make_small" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="gone"
+                app:theme="@style/TextLabel">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                    android:id="@+id/vehicleType_edittext"
+                    style="@style/editTextRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/vehicle_type" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="gone"
+                app:theme="@style/TextLabel">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                    android:id="@+id/vehicleYear_edittext"
+                    style="@style/editTextRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/vehicle_year"
+                    android:inputType="numberDecimal" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                    style="@style/regularTextviewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/num_door" />
+
+                <Spinner
+                    android:id="@+id/spin_door"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="gone">
+
+                </Spinner>
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                    android:id="@+id/txt_door"
+                    style="@style/regularTextviewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="2" />
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:theme="@style/TextLabel">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                    android:id="@+id/colorvehicle_edittext"
+                    style="@style/editTextRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/vehicle_color" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/howmanyDoorsSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:dropDownWidth="match_parent"
+                android:spinnerMode="dropdown"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/colorDarkGray"
+                android:visibility="gone" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:theme="@style/TextLabel">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                    android:id="@+id/licenceplateno_edittext"
+                    style="@style/editTextRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/licenceplateno"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                android:id="@+id/txt_date"
+                style="@style/regularblackTextviewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:drawableRight="@drawable/calendar"
+                android:hint="@string/departure_date" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/colorDarkGray" />
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                android:id="@+id/txt_time"
+                style="@style/regularblackTextviewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:drawableRight="@drawable/calendar"
+                android:hint="@string/departure_time" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/colorDarkGray" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:theme="@style/TextLabel">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                    android:id="@+id/howmuchtogive_edittext"
+                    style="@style/editTextRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789"
+                    android:hint="@string/how_much_to_give_this_ride"
+                    android:inputType="number|none"
+                    android:maxLength="3" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                style="@style/regularblackTextviewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/how_many_riders_can_you_take" />
+
+            <Spinner
+                android:id="@+id/spin_rider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_3sdp"></Spinner>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="gone"
+                app:theme="@style/TextLabel">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                    android:id="@+id/riders_edittext"
+                    style="@style/editTextRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/how_many_riders_can_you_take"
+                    android:inputType="numberDecimal" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/colorDarkGray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/item_accomde" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                    style="@style/regularblackTextviewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:hint="@string/stroller" />
+
+
+                <RadioGroup
+                    android:id="@+id/radioStroller"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/YesStroller"
+                        style="@style/checkBox_Selector"
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:checked="true"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:text="@string/yes"
+                        android:textColor="@color/menuandtextheading"
+                        android:textSize="@dimen/_13ssp" />
+
+
+                    <RadioButton
+                        android:id="@+id/NoStroller"
+                        style="@style/checkBox_Selector"
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:text="@string/no"
+                        android:textColor="@color/menuandtextheading"
+                        android:textSize="@dimen/_13ssp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="gone"
+                app:theme="@style/TextLabel">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                    android:id="@+id/numb_of_stroller_edittext"
+                    style="@style/editTextRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/how_many"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                    style="@style/regularblackTextviewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:hint="@string/car_seat" />
+
+
+                <RadioGroup
+                    android:id="@+id/radioCarseat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/Yescar"
+                        style="@style/checkBox_Selector"
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:checked="true"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:text="@string/yes"
+                        android:textColor="@color/menuandtextheading"
+                        android:textSize="@dimen/_13ssp" />
+
+
+                    <RadioButton
+                        android:id="@+id/Nocarr"
+                        style="@style/checkBox_Selector"
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:text="@string/no"
+                        android:textColor="@color/menuandtextheading"
+                        android:textSize="@dimen/_13ssp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="gone"
+                app:theme="@style/TextLabel">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                    android:id="@+id/numb_of_seat_edittext"
+                    style="@style/editTextRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/how_many"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                    style="@style/regularblackTextviewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:hint="@string/bike" />
+
+
+                <RadioGroup
+                    android:id="@+id/radioBike"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/Yesbike"
+                        style="@style/checkBox_Selector"
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:checked="true"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:text="@string/yes"
+                        android:textColor="@color/menuandtextheading"
+                        android:textSize="@dimen/_13ssp" />
+
+
+                    <RadioButton
+                        android:id="@+id/Nobike"
+                        style="@style/checkBox_Selector"
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:text="@string/no"
+                        android:textColor="@color/menuandtextheading"
+                        android:textSize="@dimen/_13ssp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="gone"
+                app:theme="@style/TextLabel">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                    android:id="@+id/numb_of_bike_edittext"
+                    style="@style/editTextRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/how_many"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                    style="@style/regularblackTextviewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:hint="@string/snowboard_or_skis" />
+
+
+                <RadioGroup
+                    android:id="@+id/radioSnowSki"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/Yesski"
+                        style="@style/checkBox_Selector"
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:checked="true"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:text="@string/yes"
+                        android:textColor="@color/menuandtextheading"
+                        android:textSize="@dimen/_13ssp" />
+
+
+                    <RadioButton
+                        android:id="@+id/Noski"
+                        style="@style/checkBox_Selector"
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:text="@string/no"
+                        android:textColor="@color/menuandtextheading"
+                        android:textSize="@dimen/_13ssp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="gone"
+                app:theme="@style/TextLabel">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                    android:id="@+id/numb_of_ski_edittext"
+                    style="@style/editTextRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/how_many"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                    style="@style/regularblackTextviewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:hint="@string/surf_board" />
+
+
+                <RadioGroup
+                    android:id="@+id/radioSurf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/Yessurf"
+                        style="@style/checkBox_Selector"
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:checked="true"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:text="@string/yes"
+                        android:textColor="@color/menuandtextheading"
+                        android:textSize="@dimen/_13ssp" />
+
+
+                    <RadioButton
+                        android:id="@+id/Nosurf"
+                        style="@style/checkBox_Selector"
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:text="@string/no"
+                        android:textColor="@color/menuandtextheading"
+                        android:textSize="@dimen/_13ssp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="gone"
+                app:theme="@style/TextLabel">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                    android:id="@+id/numb_of_surf_edittext"
+                    style="@style/editTextRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/how_many"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                    style="@style/regularblackTextviewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:hint="@string/pets" />
+
+
+                <RadioGroup
+                    android:id="@+id/radioPet"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/Yespet"
+                        style="@style/checkBox_Selector"
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:checked="true"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:text="@string/yes"
+                        android:textColor="@color/menuandtextheading"
+                        android:textSize="@dimen/_13ssp" />
+
+
+                    <RadioButton
+                        android:id="@+id/Nopet"
+                        style="@style/checkBox_Selector"
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:text="@string/no"
+                        android:textColor="@color/menuandtextheading"
+                        android:textSize="@dimen/_13ssp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:theme="@style/TextLabel">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                    android:id="@+id/ed_other"
+                    style="@style/editTextRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/other"
+                    android:imeOptions="actionNext" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="gone"
+                app:theme="@style/TextLabel">
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                    android:id="@+id/numb_of_pet_edittext"
+                    style="@style/editTextRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/how_many"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceButton
+                android:id="@+id/btn_submit"
+                style="@style/yellowButton"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_40sdp"
+                android:text="@string/submit_btn" />
+
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/progress_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+</ScrollView>

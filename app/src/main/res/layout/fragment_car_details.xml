@@ -1,0 +1,709 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            tools:context="com.apps.freeroadingdriver.fragments.CarDetailsFragment">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                        style="@style/regularTextviewStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/make" />
+
+                    <Spinner
+                        android:id="@+id/spin_make"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                        style="@style/regularTextviewStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/model" />
+
+                    <Spinner
+                        android:id="@+id/spin_model"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                        style="@style/regularTextviewStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/vehicle_type" />
+
+                    <Spinner
+                        android:id="@+id/spin_vehicle_type"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                        style="@style/regularTextviewStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/manifc_year" />
+
+                    <Spinner
+                        android:id="@+id/spin_year"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                    </Spinner>
+
+                    <TextView
+                        android:id="@+id/tv_manfecture_year"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/calendar"
+                        android:visibility="gone">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                        style="@style/regularTextviewStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/num_door" />
+
+                    <Spinner
+                        android:id="@+id/spin_door"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                    </Spinner>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                        style="@style/regularTextviewStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/num_seat" />
+
+                    <Spinner
+                        android:id="@+id/spin_seat"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                    </Spinner>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ac" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_ac"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/ac_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/yes" />
+
+                        <RadioButton
+                            android:id="@+id/ac_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/no" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wifi" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_wifi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/wifi_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/yes" />
+
+                        <RadioButton
+                            android:id="@+id/wifi_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/no" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/type_of_vehicle" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_type_of_vehicle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radio_hybrid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/hybrid" />
+
+                        <RadioButton
+                            android:id="@+id/radio_electric"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/elect" />
+
+                        <RadioButton
+                            android:id="@+id/radio_gas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/gas" />
+
+                        <RadioButton
+                            android:id="@+id/radio_diesel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/diesl" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                        style="@style/regularTextviewStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/licenceplateno" />
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                        android:id="@+id/edt_licence"
+                        style="@style/editTextRegular"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                        style="@style/regularTextviewStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/state" />
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                        android:id="@+id/ed_state"
+                        style="@style/editTextRegular"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                        style="@style/regularTextviewStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/registartion_num" />
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                        android:id="@+id/ed_reg_number"
+                        style="@style/editTextRegular"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                        style="@style/regularTextviewStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/vehicle_color" />
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                        android:id="@+id/ed_vehicle_color"
+                        style="@style/editTextRegular"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/liability_coverage_amount" />
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                        android:id="@+id/ed_liability_coverage_amount"
+                        style="@style/editTextRegular"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/collision_coverage_amount" />
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                        android:id="@+id/ed_collision_coverage_amount"
+                        style="@style/editTextRegular"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                        style="@style/regularTextviewStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/comprehensive_coverage_amount" />
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                        android:id="@+id/ed_comprehensive_coverage_cmount"
+                        style="@style/editTextRegular"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                        style="@style/regularTextviewStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/personal_injury_coverage_amount" />
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                        android:id="@+id/ed_personal_injury_coverage_amount"
+                        style="@style/editTextRegular"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                        style="@style/regularTextviewStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/underinsured_motorist_coverage_amount" />
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceEditText
+                        android:id="@+id/ed_underinsured_motorist_coverage_amount"
+                        style="@style/editTextRegular"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                        style="@style/regularTextviewStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/vehicle_front" />
+
+                    <ImageView
+                        android:id="@+id/iv_vehicle_front"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_gallery" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                        style="@style/regularTextviewStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/vehicle_back" />
+
+                    <ImageView
+                        android:id="@+id/iv_vehicle_back"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_gallery" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                        style="@style/regularTextviewStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/insurance_image" />
+
+                    <ImageView
+                        android:id="@+id/iv_insurence_certificae"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_gallery" />
+
+                </LinearLayout>
+
+                <com.apps.freeroadingdriver.customviews.TypeFaceButton
+                    android:id="@+id/btn_submit"
+                    style="@style/yellowButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_20sdp"
+                    android:text="@string/submit_btn" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_15sdp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                        style="@style/regularblackTextviewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/car_make" />
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                        android:id="@+id/carMake"
+                        style="@style/regularblackTextviewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_gray"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                        style="@style/regularblackTextviewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/car_type" />
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                        android:id="@+id/carType"
+                        style="@style/regularblackTextviewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                        style="@style/regularblackTextviewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/seating_capacity" />
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                        android:id="@+id/seatingcap"
+                        style="@style/regularblackTextviewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_gray"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                        style="@style/regularblackTextviewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/licence_plate" />
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                        android:id="@+id/licPlate"
+                        style="@style/regularblackTextviewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                        style="@style/regularblackTextviewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/car_registration_no" />
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                        android:id="@+id/vehicle_insurance_no"
+                        style="@style/regularblackTextviewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_gray"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                        style="@style/regularblackTextviewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/car_manufacture_year" />
+
+                    <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                        android:id="@+id/upload_motor_insurance_cert_exp_date"
+                        style="@style/regularblackTextviewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <include layout="@layout/progress_bar_layout" />
+    </LinearLayout>
+</RelativeLayout>

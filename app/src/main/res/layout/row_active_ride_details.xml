@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:padding="@dimen/_5sdp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/loc1"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_profile_placeholder" />
+
+        <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+            android:id="@+id/passengerName"
+            style="@style/regularblackTextviewStyle"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_toLeftOf="@+id/iHaveArrived"
+            android:layout_toRightOf="@+id/loc1"
+            android:maxLines="1"
+            android:text="@string/name" />
+
+
+        <com.apps.freeroadingdriver.customviews.TypeFaceButton
+            android:id="@+id/iHaveArrived"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            style="@style/yellowButton"
+            android:text="@string/arrived"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/callPassenger"/>
+
+        <com.apps.freeroadingdriver.customviews.TypeFaceButton
+            android:id="@+id/pickUpPassenger"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            style="@style/redButton"
+            android:text="@string/pick_up"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/callPassenger"/>
+
+        <com.apps.freeroadingdriver.customviews.TypeFaceButton
+            android:id="@+id/dropPassenger"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            style="@style/blackButton"
+            android:text="@string/drop"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/callPassenger"/>
+
+        <ImageView
+            android:id="@+id/callPassenger"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_toLeftOf="@+id/cancelForSingle"
+            android:src="@drawable/phone" />
+
+
+        <ImageView
+            android:id="@+id/cancelForSingle"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/cut" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

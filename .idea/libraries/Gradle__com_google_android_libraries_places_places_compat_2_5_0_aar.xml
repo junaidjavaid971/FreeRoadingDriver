@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.libraries.places:places-compat:2.5.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/ccc089a8a9a5a5427623457db2a6387a/transformed/jetified-places-compat-2.5.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ccc089a8a9a5a5427623457db2a6387a/transformed/jetified-places-compat-2.5.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ccc089a8a9a5a5427623457db2a6387a/transformed/jetified-places-compat-2.5.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.libraries.places/places-compat/2.5.0/986e40fb75a74aa5a4d0d00357fc6b5f796fe430/places-compat-2.5.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

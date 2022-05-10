@@ -1,0 +1,43 @@
+com/cz/imagelib/RotateBitmap.java
+ com.cz.imagelib.RotateBitmap
+com/cz/imagelib/CropImageActivity.java
+ com.cz.imagelib.CropImageActivity
+ com.cz.imagelib.CropImageActivity$1
+ com.cz.imagelib.CropImageActivity$2
+ com.cz.imagelib.CropImageActivity$3
+ com.cz.imagelib.CropImageActivity$4
+ com.cz.imagelib.CropImageActivity$4$1
+ com.cz.imagelib.CropImageActivity$5
+ com.cz.imagelib.CropImageActivity$6
+ com.cz.imagelib.CropImageActivity$Cropper
+ com.cz.imagelib.CropImageActivity$Cropper$1
+com/cz/imagelib/HighlightView.java
+ com.cz.imagelib.HighlightView
+ com.cz.imagelib.HighlightView$HandleMode
+ com.cz.imagelib.HighlightView$ModifyMode
+com/cz/imagelib/CropImageView.java
+ com.cz.imagelib.CropImageView
+com/cz/imagelib/MonitoredActivity.java
+ com.cz.imagelib.MonitoredActivity
+ com.cz.imagelib.MonitoredActivity$LifeCycleAdapter
+ com.cz.imagelib.MonitoredActivity$LifeCycleListener
+com/cz/imagelib/Log.java
+ com.cz.imagelib.Log
+com/cz/imagelib/Crop.java
+ com.cz.imagelib.Crop
+ com.cz.imagelib.Crop$Extra
+com/cz/imagelib/SystemBarTintManager.java
+ com.cz.imagelib.SystemBarTintManager
+ com.cz.imagelib.SystemBarTintManager$1
+ com.cz.imagelib.SystemBarTintManager$SystemBarConfig
+com/cz/imagelib/CropUtil.java
+ com.cz.imagelib.CropUtil
+ com.cz.imagelib.CropUtil$BackgroundJob
+ com.cz.imagelib.CropUtil$BackgroundJob$1
+com/cz/imagelib/ImageViewTouchBase.java
+ com.cz.imagelib.ImageViewTouchBase
+ com.cz.imagelib.ImageViewTouchBase$1
+ com.cz.imagelib.ImageViewTouchBase$2
+ com.cz.imagelib.ImageViewTouchBase$Recycler
+com/cz/imagelib/BuildConfig.java
+ com.cz.imagelib.BuildConfig

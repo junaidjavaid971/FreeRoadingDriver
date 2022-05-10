@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.apps.freeroadingdriver.fragments.StatisticsFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_15sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                style="@style/regularblackTextviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_earnings"/>
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                android:id="@+id/totalearn"
+                android:layout_alignParentRight="true"
+                style="@style/regularblackTextviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gray"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                style="@style/regularblackTextviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/month_s_earnings"/>
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                android:id="@+id/monthearning"
+                android:layout_alignParentRight="true"
+                style="@style/regularblackTextviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                style="@style/regularblackTextviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/week_s_earning"/>
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                android:id="@+id/weekearn"
+                android:layout_alignParentRight="true"
+                style="@style/regularblackTextviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:background="@drawable/bg_gray"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                style="@style/regularblackTextviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/today_s_earning"/>
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                android:id="@+id/todayearn"
+                android:layout_alignParentRight="true"
+                style="@style/regularblackTextviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                style="@style/regularblackTextviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/last_fare"/>
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                android:id="@+id/last_fare"
+                android:layout_alignParentRight="true"
+                style="@style/regularblackTextviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:background="@drawable/bg_gray"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                style="@style/regularblackTextviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_booking"/>
+
+            <com.apps.freeroadingdriver.customviews.TypeFaceTextview
+                android:id="@+id/total_booking"
+                android:layout_alignParentRight="true"
+                style="@style/regularblackTextviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/progress_bar_layout"/>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<resources>
+
+    <color name="crop__button_bar">#f3f3f3</color>
+    <color name="crop__button_text">#666666</color>
+    <color name="crop__selector_pressed">#1a000000</color>
+    <color name="crop__selector_focused">#77000000</color>
+    <color name="colorPrimary">#FFFFFFFF</color>
+    <color name="colorPrimaryDark">#FF000000</color>
+    <color name="colorAccent">#FF009688</color>
+    <color name="text_color_dark">#FF232323</color>
+    <color name="text_color_light">#FF747474</color>
+    <color name="text_color_disable">#FF939393</color>
+    <color name="tileBackground">#3D3D3D</color>
+    <color name="transparentblack">#393A3C</color>
+
+</resources>

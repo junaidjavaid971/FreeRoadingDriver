@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/titlebarcolor">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollIndicators="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rMember"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp">
+
+                <ImageView
+                    android:id="@+id/img_sub_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/left_arrow"
+                    android:padding="@dimen/_15sdp" />
+
+                <TextView
+                    android:id="@+id/txt_skip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/_15sdp"
+                    android:text="Skip"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_15ssp" />
+
+                <TextView
+                    android:id="@+id/txtMember"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_70sdp"
+                    android:gravity="center"
+                    android:text="@string/membership"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_20sdp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/l_subs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rMember"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:layout_marginTop="-100dp"
+                android:layout_marginRight="@dimen/_40sdp"
+                android:adjustViewBounds="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/l_free_subscribe"
+                    android:layout_width="@dimen/_210sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_weight="1"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/txt_basic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="$54.99"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_18ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_free_cast"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_15ssp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/l_monthly_subscribe"
+                    android:layout_width="@dimen/_210sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_weight="1"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="$4.99"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_18ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_monthly"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/monthly"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_15ssp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l_subs"
+                android:layout_marginTop="@dimen/_30sdp">
+
+                <TextView
+                    android:id="@+id/txt_subscribe_now"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="@string/subscribe_now"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_25ssp" />
+
+                <TextView
+                    android:id="@+id/txt_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_subscribe_now"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:text="@string/google_pay_account_decs"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12ssp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
